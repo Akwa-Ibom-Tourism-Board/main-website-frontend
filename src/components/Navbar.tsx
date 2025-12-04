@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-main.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,15 +17,15 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={logo} alt="Akwa Ibom Tourism" className="h-12 w-12" />
+            <img src={logo} alt="Akwa Ibom Tourism" className="h-20 w-20" />
             <div className="hidden md:block">
               <div className="font-display text-xl font-bold text-primary">
                 Akwa Ibom State
               </div>
-              <div className="text-xs text-muted-foreground">
+              <div className="text-sm text-muted-foreground">
                 Hotels & Tourism Board
               </div>
             </div>
