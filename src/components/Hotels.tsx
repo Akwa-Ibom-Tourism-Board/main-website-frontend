@@ -90,7 +90,7 @@ const Hotels = () => {
                     <p className="font-bold text-primary text-lg">{hotel.price}</p>
                   </div>
                   <Button variant="default" className="bg-primary hover:bg-primary/90">
-                    Book Now
+                    View Website
                   </Button>
                 </div>
               </CardContent>
