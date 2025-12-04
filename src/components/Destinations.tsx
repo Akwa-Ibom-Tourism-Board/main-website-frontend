@@ -2,6 +2,8 @@ import { MapPin, Waves, Mountain, Camera } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import natureImg from "@/assets/nature.jpg";
 import cultureImg from "@/assets/culture.jpg";
+import ibenoBeachImg from "@/assets/ibeno-beach.webp"
+import uyoStadium from "@/assets/ibom-stadium.webp"
 
 const Destinations = () => {
   const destinations = [
@@ -9,7 +11,7 @@ const Destinations = () => {
       icon: Waves,
       title: "Ibeno Beach",
       description: "West Africa's longest stretch of white sand beach with crystal clear waters",
-      image: "linear-gradient(135deg, hsl(158 100% 17% / 0.9), hsl(158 100% 25% / 0.85))",
+      image: ibenoBeachImg,
     },
     {
       icon: Mountain,
@@ -27,7 +29,7 @@ const Destinations = () => {
       icon: MapPin,
       title: "Uyo Township Stadium",
       description: "World-class modern facilities and entertainment venues",
-      image: "linear-gradient(135deg, hsl(28 81% 50% / 0.9), hsl(28 81% 60% / 0.85))",
+      image: uyoStadium,
     },
   ];
 
