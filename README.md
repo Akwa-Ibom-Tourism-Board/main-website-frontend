@@ -1,73 +1,135 @@
-# Welcome to your Lovable project
+🛫 Akwa Ibom State Hotels and Tourism Board Website
 
-## Project info
+Internal Project Documentation
 
-**URL**: https://lovable.dev/projects/ca5280e6-aec1-4ff0-9c8c-e656d6e03da1
+This repository contains the source code for a private, production-grade tourism website built for the Akwa Ibom State Hotels & Tourism Board.
+The application highlights key attractions, hotels, cultural elements, and visitor information for potential tourists and partners.
 
-## How can I edit this code?
+1. Overview
 
-There are several ways of editing your application.
+The application is a single-page React website developed with a focus on:
 
-**Use Lovable**
+High-performance rendering
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ca5280e6-aec1-4ff0-9c8c-e656d6e03da1) and start prompting.
+Mobile-first responsive design
 
-Changes made via Lovable will be committed automatically to this repo.
+Consistent branded UI
 
-**Use your preferred IDE**
+Professional presentation of destinations, hotels, and cultural content
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Technology Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The project is built using the following technologies:
 
-Follow these steps:
+React 18
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+TypeScript
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Vite (build tooling & dev server)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Tailwind CSS
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+shadcn/ui + Radix UI (component system)
+
+React Router v6
+
+TanStack React Query (for future server-state needs)
+
+Lucide Icons
+
+These technologies ensure long-term maintainability, fast performance, and design consistency.
+
+3. Application Structure
+src/
+ ├── App.tsx                  # Application root and router
+ ├── pages/
+ │    ├── Index.tsx           # Main landing page
+ │    └── NotFound.tsx        # Fallback page
+ ├── components/
+ │    ├── Navbar.tsx
+ │    ├── Hero.tsx
+ │    ├── Destinations.tsx
+ │    ├── Hotels.tsx
+ │    ├── Culture.tsx
+ │    └── Footer.tsx
+ ├── assets/                  # Images and static assets
+ └── components/ui/           # shadcn/ui component library
+
+
+The Index page composes all primary sections of the website.
+
+4. Features
+4.1 Content Sections
+
+Hero Section – High-quality imagery, intro headline, and calls to action
+
+Destinations – Curated list of top tourist sites
+
+Hotels – Premium accommodation options with amenities and pricing indicators
+
+Culture – Overview of music, arts, festivals, and local communities
+
+Footer – Contact details, quick links, and social media references
+
+4.2 Layout & Interaction
+
+Fully responsive navigation with desktop and mobile menus
+
+Smooth animations for hover and image transitions
+
+Consistent use of the project’s design language and branding
+
+4.3 Routing
+Route	Description
+/	Main website homepage
+*	Not Found screen
+5. Local Development
+Prerequisites
+
+Node.js (LTS recommended)
+
+npm package manager
+
+Install dependencies
+npm install
+
+Start development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Build for production
+npm run build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Preview production build
+npm run preview
 
-**Use GitHub Codespaces**
+6. Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This project can be deployed to any modern static hosting platform, including:
 
-## What technologies are used for this project?
+Vercel
 
-This project is built with:
+Netlify
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Cloudflare Pages
 
-## How can I deploy this project?
+GitHub Pages
 
-Simply open [Lovable](https://lovable.dev/projects/ca5280e6-aec1-4ff0-9c8c-e656d6e03da1) and click on Share -> Publish.
+Internal infrastructure if required
 
-## Can I connect a custom domain to my Lovable project?
+The build output is generated in the dist/ directory after running:
 
-Yes, you can!
+npm run build
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+7. Notes for Maintainers
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This repository is private and intended for internal or authorized use only.
+
+All external assets (images, logos, etc.) must comply with branding and licensing requirements.
+
+Do not expose API keys, credentials, or sensitive internal data.
+
+All updates should maintain visual consistency with the existing design system.
+
+8. License
+
+This project is proprietary and not licensed for external use, redistribution, or modification without authorization.
