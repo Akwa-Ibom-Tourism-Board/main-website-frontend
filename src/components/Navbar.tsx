@@ -1,55 +1,95 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import NavDropdown, { NavItemWithDropdown } from "@/components/NavDropdown";
 import logo from "@/assets/logo-main.png";
+
+const navItems: NavItemWithDropdown[] = [
+  {
+    name: "Tourism",
+    items: [
+      { name: "Tour Operators", href: "/tourism/tour-operators" },
+      { name: "Group Tours", href: "/tourism/group-tours" },
+      {
+        name: "Prestigious Destinations",
+        href: "/tourism/prestigious-destinations",
+      },
+      {
+        name: "Restaurants & Fine Dining",
+        href: "/tourism/restaurants-fine-dining",
+      },
+    ],
+  },
+  {
+    name: "About Akwa Ibom",
+    items: [
+      { name: "About Akwa Ibom", href: "/about-akwa-ibom" },
+      { name: "Culture & Heritage", href: "/about-akwa-ibom/culture-heritage" },
+      { name: "Calendar of Activities", href: "/about-akwa-ibom/calendar" },
+    ],
+  },
+  {
+    name: "The Board",
+    items: [
+      { name: "About the Board", href: "/about-akwa-ibom-state-tourism-board" },
+      { name: "Conferences & Events", href: "/the-board/conferences-events" },
+      {
+        name: "Organizational Structure",
+        href: "/the-board/organizational-structure",
+      },
+    ],
+  },
+];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Destinations", href: "#destinations" },
-    { name: "Hotels", href: "#hotels" },
-    { name: "Culture", href: "#culture" },
-    { name: "Contact", href: "#contact" },
-  ];
-
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
+    <nav className="fixed top-10 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3">
             <img src={logo} alt="Akwa Ibom Tourism" className="h-20 w-20" />
             <div className="hidden md:block">
               <div className="font-display text-xl font-bold text-primary">
                 Akwa Ibom State
               </div>
-              <div className="text-sm text-muted-foreground">
+              <div className="text-xs text-muted-foreground">
                 Hotels & Tourism Board
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
-              >
-                {link.name}
-              </a>
+          <div className="hidden lg:flex items-center space-x-8">
+            <Link
+              to="/"
+              className="text-foreground hover:text-[#e37333] transition-colors font-medium"
+            >
+              Home
+            </Link>
+            {navItems.map((item) => (
+              <NavDropdown key={item.name} item={item} />
             ))}
-            <Button variant="default" className="bg-secondary hover:bg-secondary/90">
+            <Link
+              to="/#contact"
+              className="text-foreground hover:text-[#e37333] transition-colors font-medium"
+            >
+              Contact
+            </Link>
+            {/* <Button
+              variant="default"
+              className="bg-secondary hover:bg-secondary/90"
+            >
               Plan Your Visit
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="lg:hidden text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -59,21 +99,33 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
-            <div className="flex flex-col space-y-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium py-2"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
+          <div className="lg:hidden py-4 border-t border-border animate-fade-in">
+            <div className="flex flex-col space-y-2">
+              <Link
+                to="/"
+                className="py-2 text-foreground hover:text-[#e37333] transition-colors font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              {navItems.map((item) => (
+                <NavDropdown
+                  key={item.name}
+                  item={item}
+                  mobile
+                  onItemClick={() => setIsMenuOpen(false)}
+                />
               ))}
-              <Button variant="default" className="bg-secondary hover:bg-secondary/90 w-full">
+              <Link
+                to="/#contact"
+                className="py-2 text-foreground hover:text-[#e37333] transition-colors font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+              {/* <Button variant="default" className="bg-secondary hover:bg-secondary/90 w-full mt-4">
                 Plan Your Visit
-              </Button>
+              </Button> */}
             </div>
           </div>
         )}

@@ -1,9 +1,9 @@
 import { Star, Wifi, Coffee, Utensils } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import hotelImg1 from "@/assets/le-meridien.jpeg";
-import hotelImg2 from "@/assets/four-points.jpg";
-import hotelImg3 from "@/assets/vinpy-hotels.jpg";
+import hotelImg from "@/assets/le-meridien.jpeg";
+import fourpointsImg from "@/assets/four-points.jpg";
+import vinpyImg from "@/assets/vinpy-hotels.jpg";
 
 const Hotels = () => {
   const hotels = [
@@ -11,21 +11,21 @@ const Hotels = () => {
       name: "Le Meridien Ibom Hotel & Golf Resort",
       rating: 5,
       amenities: ["Free WiFi", "Restaurant", "Pool", "Golf Course"],
-      image: hotelImg1,
+      image: hotelImg,
       price: "From ₦45,000/night",
     },
     {
       name: "Four Points by Sheraton",
       rating: 5,
       amenities: ["Free WiFi", "Restaurant", "Spa", "Gym"],
-      image: hotelImg2,
+      image: fourpointsImg,
       price: "From ₦38,000/night",
     },
     {
       name: "Vinpy Hotels",
       rating: 4,
       amenities: ["Free WiFi", "Restaurant", "Bar", "Airport Transfer"],
-      image: hotelImg3,
+      image: vinpyImg,
       price: "From ₦28,000/night",
     },
   ];
@@ -52,11 +52,17 @@ const Hotels = () => {
           {hotels.map((hotel, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-elegant transition-all duration-300 border-border">
               <div className="h-56 overflow-hidden">
+                {hotel.image ? (
                   <img 
                     src={hotel.image} 
                     alt={hotel.name}
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                   />
+                ) : (
+                  <div 
+                    className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20"
+                  ></div>
+                )}
               </div>
               <CardHeader>
                 <div className="flex items-start justify-between mb-2">

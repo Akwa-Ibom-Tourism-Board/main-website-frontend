@@ -9,7 +9,7 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img src={logo} alt="Logo" className="h-12 w-12" />
+              <img src={logo} alt="Logo" className="h-20 w-20" />
               <div>
                 <div className="font-display text-lg font-bold">Akwa Ibom State</div>
                 <div className="text-xs opacity-90">Hotels & Tourism Board</div>

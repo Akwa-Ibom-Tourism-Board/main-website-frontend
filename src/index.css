@@ -126,3 +126,20 @@ All colors MUST be HSL.
     transform: translateY(0);
   }
 }
+
+@keyframes slow-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 8s ease-out forwards;
+}
