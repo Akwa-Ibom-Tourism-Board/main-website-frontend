@@ -41,11 +41,12 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={16} className="flex-shrink-0" />
-                <span>+234 (0) 803 XXX XXXX</span>
+                <span>+234 (0) 7030721184
+</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={16} className="flex-shrink-0" />
-                <span>info@akwaibomtourism.ng</span>
+                <span>info.akhtb@gmail.com</span>
               </li>
             </ul>
           </div>

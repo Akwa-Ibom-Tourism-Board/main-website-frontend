@@ -5,6 +5,7 @@ import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroBeach from "@/assets/hero-beach.jpg";
+import boardChairman from "@/assets/aunt-ime-flipped.png";
 
 const AboutBoard = () => {
   return (
@@ -35,6 +36,7 @@ const AboutBoard = () => {
       {/* Main Content */}
       <section className="py-20">
         <div className="container mx-auto px-4">
+          {/* Back Button */}
           <Link to="/">
             <Button variant="ghost" className="mb-8 hover:bg-primary/10">
               <ArrowLeft size={16} className="mr-2" />
@@ -43,7 +45,8 @@ const AboutBoard = () => {
           </Link>
 
           {/* History Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-center">
+            {/* Text */}
             <div className="animate-fade-in">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
@@ -76,95 +79,90 @@ const AboutBoard = () => {
                 </p>
               </div>
             </div>
-            <div
-              className="relative animate-fade-in"
-              style={{ animationDelay: "200ms" }}
-            >
+
+            {/* Image */}
+            <div className="relative animate-fade-in">
               <img
                 src={heroBeach}
                 alt="Tourism in Akwa Ibom"
-                className="rounded-2xl shadow-xl w-full h-full object-cover"
+                className="rounded-2xl shadow-xl w-full max-h-[400px] object-cover object-center"
               />
-              <div className="absolute -bottom-6 -left-6 bg-secondary text-secondary-foreground p-6 rounded-xl shadow-lg">
-                <div className="text-4xl font-bold">500+</div>
-                <div className="text-sm">Registered Hotels</div>
+              <div className="absolute -bottom-6 -left-6 bg-secondary text-secondary-foreground p-4 rounded-xl shadow-lg">
+                <div className="text-2xl md:text-4xl font-bold">500+</div>
+                <div className="text-xs md:text-sm">Registered Hotels</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Chairman Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-center">
+            {/* Image */}
+            <div className="w-full">
+              <img
+                src={boardChairman}
+                alt="Board Chairman"
+                className="rounded-2xl shadow-xl w-full max-h-[500px] object-cover object-center"
+              />
+            </div>
+
+            {/* Text */}
+            <div className="flex flex-col justify-center space-y-4">
+              <h2 className="font-display text-3xl font-bold text-primary mb-4">
+                Message from the Board Chairman
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Welcome to the Akwa Ibom State Hotels and Tourism Board. Our
+                mission is to promote excellence in hospitality and showcase the
+                rich culture and natural beauty of our state. We are committed
+                to transforming Akwa Ibom into a top tourism destination through
+                innovation, partnerships, and sustainable growth.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                I invite you to explore our state’s hidden gems, experience our
+                hospitality, and join us in celebrating the beauty and potential
+                of Akwa Ibom.
+              </p>
+              <div>
+                <p className="font-semibold text-primary mt-4">– Mrs Ime Udo</p>
+                <p className="font-semibold text-primary">Board Chairman</p>
               </div>
             </div>
           </div>
 
           {/* Mission & Vision */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Mission */}
-            <div className="bg-card rounded-2xl p-8 shadow-lg border border-border animate-fade-in hover:shadow-xl transition-shadow">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+            {/* Mission Card */}
+            <div className="bg-card rounded-2xl p-6 md:p-8 shadow-lg border border-border animate-fade-in hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Target className="text-primary" size={24} />
                 </div>
-                <h2 className="font-display text-2xl font-bold text-primary">
+                <h3 className="font-display text-2xl font-bold text-primary">
                   Our Mission
-                </h2>
+                </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 The Board is poised to regulating the operations of Hospitality
                 Establishments and Tourism towards generating revenue for Akwa
                 Ibom State
               </p>
-              <ul className="mt-6 space-y-3">
-                {[
-                  "Regulate hospitality establishments to international standards",
-                  "Promote tourism attractions and cultural heritage",
-                  "Build capacity of tourism professionals",
-                  "Facilitate tourism investments and partnerships",
-                ].map((item, index) => (
-                  <li
-                    key={index}
-                    className="flex items-start gap-3 text-muted-foreground"
-                  >
-                    <div className="w-2 h-2 bg-secondary rounded-full mt-2"></div>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
 
-            {/* Vision */}
-            <div
-              className="bg-card rounded-2xl p-8 shadow-lg border border-border animate-fade-in hover:shadow-xl transition-shadow"
-              style={{ animationDelay: "100ms" }}
-            >
+            {/* Vision Card */}
+            <div className="bg-card rounded-2xl p-6 md:p-8 shadow-lg border border-border animate-fade-in hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
                   <Eye className="text-secondary" size={24} />
                 </div>
-                <h2 className="font-display text-2xl font-bold text-primary">
+                <h3 className="font-display text-2xl font-bold text-primary">
                   Our Vision
-                </h2>
+                </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 To serve as a data bank for the Management of Akwa Ibom Hotels
                 and allied establishments and to promote the rich cultural
                 heritage of the State through Tourism
               </p>
-              <div className="mt-6 grid grid-cols-2 gap-4">
-                {[
-                  { value: "100+", label: "Organized Group Tourism" },
-                  { value: "50K+", label: "Annual Tourists" },
-                  { value: "500+", label: "Jobs Created" },
-                  { value: "N2m", label: "Tourism Revenue" },
-                ].map((stat, index) => (
-                  <div
-                    key={index}
-                    className="bg-[#e37333] rounded-lg p-4 text-center"
-                  >
-                    <div className="text-2xl font-bold text-white">
-                      {stat.value}
-                    </div>
-                    <div className="text-xs text-gray-300">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>

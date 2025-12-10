@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NavDropdown, { NavItemWithDropdown } from "@/components/NavDropdown";
 import logo from "@/assets/logo-main.png";
+import ariseLogo from "@/assets/arise-logo-main.png";
 
 const navItems: NavItemWithDropdown[] = [
   {
@@ -51,6 +52,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
+            <img
+              src={ariseLogo}
+              alt="Akwa Ibom Tourism"
+              className="lg:hidden h-20 w-20"
+            />
             <img src={logo} alt="Akwa Ibom Tourism" className="h-20 w-20" />
             <div className="hidden md:block">
               <div className="font-display text-xl font-bold text-primary">
@@ -85,6 +91,11 @@ const Navbar = () => {
             >
               Plan Your Visit
             </Button> */}
+            <img
+              src={ariseLogo}
+              alt="Akwa Ibom Tourism"
+              className="h-20 w-20"
+            />
           </div>
 
           {/* Mobile Menu Button */}
