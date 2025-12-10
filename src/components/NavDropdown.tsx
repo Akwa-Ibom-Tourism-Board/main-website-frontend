@@ -67,7 +67,7 @@ const NavDropdown = ({ item, mobile = false, onItemClick }: NavDropdownProps) =>
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
-      <button className="flex hover:text-[#e37333] items-center gap-1 text-foreground hover:text-primary transition-colors font-medium py-2">
+      <button className="flex hover:text-[#e37333] items-center gap-1 text-foreground transition-colors font-medium py-2">
         {item.name}
         <ChevronDown
           className={cn(
