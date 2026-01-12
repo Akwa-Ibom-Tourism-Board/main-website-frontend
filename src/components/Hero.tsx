@@ -16,7 +16,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % heroImages.length);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -80,7 +80,7 @@ const Hero = () => {
       </div>
 
       {/* Image Indicators */}
-      <div className="absolute bottom-32 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+      <div className="absolute hidden bottom-32 left-1/2 -translate-x-1/2 z-20 md:flex gap-2">
         {heroImages.map((_, index) => (
           <button
             key={index}
