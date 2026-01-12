@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 
 const departments = [
   {
-    name: "Office of the General Manager",
-    head: "General Manager",
+    name: "Office of the Board Chairman",
+    head: "Board Chairman",
     description: "Overall leadership and strategic direction of the board.",
   },
   {
@@ -66,7 +66,7 @@ const OrganizationalStructure = () => {
           <div className="mb-16">
             <div className="flex justify-center mb-8">
               <div className="bg-primary text-primary-foreground rounded-xl p-6 text-center shadow-lg">
-                <h3 className="font-display text-lg font-bold">General Manager</h3>
+                <h3 className="font-display text-lg font-bold">Board Chairman</h3>
                 <p className="text-sm opacity-90">Chief Executive</p>
               </div>
             </div>
