@@ -52,7 +52,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Left: Main Logo and Text */}
-          <Link to="/" className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
+          <Link
+            to="/"
+            className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0"
+          >
             <img
               src={logo}
               alt="Akwa Ibom Tourism"
@@ -100,7 +103,7 @@ const Navbar = () => {
               alt="Akwa Ibom Logo"
               className="hidden md:block h-14 w-auto lg:h-20 lg:w-auto max-w-[80px] lg:max-w-[120px] flex-shrink-0"
             />
-            
+
             {/* Mobile Menu Button */}
             <button
               className="lg:hidden text-foreground p-2 -mr-2"
@@ -139,14 +142,10 @@ const Navbar = () => {
                 Contact
               </Link>
             </div>
-            
+
             {/* Mobile: Show additional logos at bottom of menu */}
             <div className="flex items-center justify-center space-x-4 mt-6 pt-4 border-t border-border md:hidden">
-              <img
-                src={ariseLogo}
-                alt="Arise Logo"
-                className="h-16 w-16"
-              />
+              <img src={ariseLogo} alt="Arise Logo" className="h-16 w-16" />
               <img
                 src={akwaIbomLogo}
                 alt="Akwa Ibom Logo"
