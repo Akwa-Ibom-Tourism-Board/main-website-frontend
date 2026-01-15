@@ -27,7 +27,7 @@ const Destinations = () => {
     },
     {
       icon: MapPin,
-      title: "Uyo Township Stadium",
+      title: "Godswill Akpabio International Stadium",
       description: "World-class modern facilities and entertainment venues",
       image: ibomStadiumImg,
     },

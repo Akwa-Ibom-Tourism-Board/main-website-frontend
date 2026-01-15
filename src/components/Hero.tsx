@@ -50,7 +50,7 @@ const Hero = () => {
           </div>
           
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-in">
-            Welcome to Akwa Ibom Hotels and Tourism Board
+            Welcome to Akwa Ibom State Hotels and Tourism Board
           </h1>
           
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-in">

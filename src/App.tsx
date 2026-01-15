@@ -33,24 +33,45 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/about-akwa-ibom-state-tourism-board" element={<AboutBoard />} />
+          <Route
+            path="/about-akwa-ibom-state-tourism-board"
+            element={<AboutBoard />}
+          />
           <Route path="/news/:id" element={<NewsDetail />} />
-          
+
           {/* Tourism routes */}
           <Route path="/tourism/tour-operators" element={<TourOperators />} />
           <Route path="/tourism/group-tours" element={<GroupTours />} />
-          <Route path="/tourism/prestigious-destinations" element={<PrestigiousDestinations />} />
-          <Route path="/tourism/restaurants-fine-dining" element={<RestaurantsDining />} />
-          
+          <Route
+            path="/tourism/prestigious-destinations"
+            element={<PrestigiousDestinations />}
+          />
+          <Route
+            path="/tourism/restaurants-fine-dining"
+            element={<RestaurantsDining />}
+          />
+
           {/* About Akwa Ibom routes */}
           <Route path="/about-akwa-ibom" element={<AboutAkwaIbom />} />
-          <Route path="/about-akwa-ibom/culture-heritage" element={<CultureHeritage />} />
-          <Route path="/about-akwa-ibom/calendar" element={<CalendarActivities />} />
-          
+          <Route
+            path="/about-akwa-ibom/culture-heritage"
+            element={<CultureHeritage />}
+          />
+          <Route
+            path="/about-akwa-ibom/calendar"
+            element={<CalendarActivities />}
+          />
+
           {/* The Board routes */}
-          <Route path="/the-board/conferences-events" element={<ConferencesEvents />} />
-          <Route path="/the-board/organizational-structure" element={<OrganizationalStructure />} />
-          
+          <Route
+            path="/the-board/conferences-events"
+            element={<ConferencesEvents />}
+          />
+          <Route
+            path="/the-board/organizational-structure"
+            element={<OrganizationalStructure />}
+          />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
