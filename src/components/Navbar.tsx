@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NavDropdown, { NavItemWithDropdown } from "@/components/NavDropdown";
-import logo from "@/assets/logo-main.png";
+import logo from "@/assets/logo-main.jpeg";
 import ariseLogo from "@/assets/arise-logo-main.png";
 import akwaIbomLogo from "@/assets/akwa-ibom-logo-main.png";
 
@@ -32,9 +32,9 @@ const navItems: NavItemWithDropdown[] = [
     ],
   },
   {
-    name: "The Board",
+    name: "The Commission",
     items: [
-      { name: "About the Board", href: "/about-akwa-ibom-state-tourism-board" },
+      { name: "About the Commission", href: "/about-akwa-ibom-state-tourism-board" },
       { name: "Conferences & Events", href: "/the-board/conferences-events" },
       {
         name: "Organizational Structure",
@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-[100px] md:top-24 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between h-20">
           {/* Left: Main Logo and Text */}
           <Link
@@ -59,14 +59,14 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Akwa Ibom Tourism"
-              className="h-14 w-14 sm:h-16 sm:w-16 lg:h-20 lg:w-20"
+              className="h-14 w-14 sm:h-16 sm:w-16 lg:h-24 lg:w-24"
             />
             <div className="hidden sm:block">
               <div className="font-display text-sm sm:text-base lg:text-xl font-bold text-primary leading-tight">
                 Akwa Ibom State
               </div>
               <div className="text-[10px] sm:text-xs text-muted-foreground">
-                Hotels & Tourism Board
+                Hotels & Tourism Development Commission
               </div>
             </div>
           </Link>

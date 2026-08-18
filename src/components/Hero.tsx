@@ -6,9 +6,17 @@ import ibomAirImg from "@/assets/ibom-air.webp";
 import ibomstadium2Img from "@/assets/stad2.webp";
 import tropicana from "@/assets/tropicana.jpg";
 import uyoPlazaImg from "@/assets/plaz.png";
-import ibenoImg from '@/assets/ibeno-beach.webp';
+import ibenoImg from "@/assets/ibeno-beach.webp";
+import logo from "@/assets/logo-main.jpeg";
 
-const heroImages = [uyoPlazaImg, ibomAirImg, ibomstadium2Img, tropicana, ibenoImg];
+const heroImages = [
+  logo,
+  uyoPlazaImg,
+  ibomAirImg,
+  ibomstadium2Img,
+  tropicana,
+  ibenoImg,
+];
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -21,7 +29,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background Images Carousel */}
       {heroImages.map((image, index) => (
         <div
@@ -48,20 +59,20 @@ const Hero = () => {
               Nigeria's Hidden Gem
             </span>
           </div>
-          
+
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-in">
-            Welcome to Akwa Ibom State Hotels and Tourism Board
+            Welcome to Akwa Ibom State Hotels and Tourism Develoment Commission
           </h1>
-          
+
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-in">
-            Curating world-class hospitality, 
-            and unforgettable adventures in the land of promise.
+            Curating world-class hospitality, and unforgettable adventures in
+            the land of promise.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
             <Link to="/about-akwa-ibom-state-tourism-board">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-secondary hover:bg-secondary/90 text-lg px-8 py-6 shadow-elegant w-full sm:w-auto"
               >
                 About Us
@@ -86,8 +97,8 @@ const Hero = () => {
             key={index}
             onClick={() => setCurrentImage(index)}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentImage 
-                ? "bg-secondary w-8" 
+              index === currentImage
+                ? "bg-secondary w-8"
                 : "bg-primary-foreground/50 hover:bg-primary-foreground/70"
             }`}
             aria-label={`Go to slide ${index + 1}`}

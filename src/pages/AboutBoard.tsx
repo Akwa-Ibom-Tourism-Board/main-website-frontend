@@ -25,7 +25,7 @@ const AboutBoard = () => {
         </div>
         <div className="container mx-auto px-4 relative z-10 pt-32 text-center">
           <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-4 animate-fade-in">
-            About Akwa Ibom Hotels & Tourism Board
+            About Akwa Ibom Hotels & Tourism Development Commission
           </h1>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto animate-fade-in">
             Promoting Excellence in Hospitality and Tourism
@@ -58,19 +58,19 @@ const AboutBoard = () => {
               </div>
               <div className="prose prose-lg text-muted-foreground">
                 <p className="mb-4">
-                  The Akwa Ibom State Hotels and Tourism Board was established
+                  The Akwa Ibom State Hotels and Tourism Development Commission was established
                   by the State Government to regulate, develop, and promote the
                   hospitality and tourism sector in Akwa Ibom State.
                 </p>
                 <p className="mb-4">
-                  Since its inception, the Board has been at the forefront of
+                  Since its inception, the Commission has been at the forefront of
                   transforming Akwa Ibom into one of Nigeria's premier tourism
                   destinations. Through strategic initiatives, partnerships, and
                   investments, we have positioned the state as the hospitality
                   capital of the South-South region.
                 </p>
                 <p>
-                  Today, the Board oversees the registration and licensing of
+                  Today, the Commission oversees the registration and licensing of
                   over 500 hospitality establishments, coordinates tourism
                   promotion activities, and implements capacity building
                   programs for industry professionals. Our efforts have
@@ -111,7 +111,7 @@ const AboutBoard = () => {
                 Message from the Board Chairman
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Welcome to the Akwa Ibom State Hotels and Tourism Board. Our
+                Welcome to the Akwa Ibom State Hotels and Tourism Development Commission. Our
                 mission is to promote excellence in hospitality and showcase the
                 rich culture and natural beauty of our state. We are committed
                 to transforming Akwa Ibom into a top tourism destination through
@@ -124,7 +124,7 @@ const AboutBoard = () => {
               </p>
               <div>
                 <p className="font-semibold text-primary mt-4">– Mrs Ime Udo</p>
-                <p className="font-semibold text-primary">Board Chairman</p>
+                <p className="font-semibold text-primary">Commission Chairman</p>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@ const AboutBoard = () => {
                 </h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                The Board is poised to regulating the operations of Hospitality
+                The Commission is poised to regulating the operations of Hospitality
                 Establishments and Tourism towards generating revenue for Akwa
                 Ibom State
               </p>
