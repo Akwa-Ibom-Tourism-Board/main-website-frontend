@@ -1,4 +1,4 @@
-🛫 Akwa Ibom State Hotels and Tourism Board Website
+🛫 Akwa Ibom State Hotels and Tourism Development Commission Website
 
 Internal Project Documentation
 

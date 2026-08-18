@@ -39,7 +39,7 @@ const TourOperators = () => {
             <p className="text-muted-foreground mb-8">
               Akwa Ibom State is home to a number of licensed and professional tour operators 
               who are dedicated to providing visitors with memorable experiences. These operators 
-              are certified by the Akwa Ibom State Hotels and Tourism Board and adhere to the 
+              are certified by the Akwa Ibom State Hotels and Tourism Development Commission and adhere to the 
               highest standards of service delivery.
             </p>
 
@@ -61,7 +61,7 @@ const TourOperators = () => {
               How to Choose a Tour Operator
             </h2>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
-              <li>Verify their license with the Tourism Board</li>
+              <li>Verify their license with the Tourism Development Commission</li>
               <li>Check reviews and testimonials from previous clients</li>
               <li>Ensure they have proper insurance coverage</li>
               <li>Compare prices and services offered</li>

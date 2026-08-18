@@ -34,7 +34,7 @@ Key factors that contributed to this achievement include:
 - Improved security and tourist-friendly policies
 - Investment in tourism infrastructure and capacity building
 
-The Hotels and Tourism Board has announced plans to leverage this recognition to attract more international visitors and investments to the state.`,
+The Hotels and Tourism Development Commission has announced plans to leverage this recognition to attract more international visitors and investments to the state.`,
     date: "November 12, 2024",
     category: "Achievement"
   },
@@ -72,7 +72,7 @@ The Governor commended the investors for their commitment to sustainable develop
     image: culture,
     fullContent: `The 2024 edition of the Ibom Cultural Festival has been declared the most successful in its history, attracting over 50,000 visitors from Nigeria and across Africa over its seven-day duration.
 
-The festival, organized by the Akwa Ibom State Hotels and Tourism Board in partnership with the Ministry of Culture and Tourism, showcased the rich cultural heritage of the state through various activities:
+The festival, organized by the Akwa Ibom State Hotels and Tourism Development Commission in partnership with the Ministry of Culture and Tourism, showcased the rich cultural heritage of the state through various activities:
 
 Highlights included:
 - Traditional dance competitions featuring all 31 local government areas
@@ -97,7 +97,7 @@ The Commissioner for Culture and Tourism announced that planning has already beg
     title: "500 Youth Graduate from Tourism Training Program",
     description: "Young professionals equipped with skills to drive the state's hospitality industry forward.",
     image: nature,
-    fullContent: `The Akwa Ibom Hotels and Tourism Board has successfully graduated 500 young professionals from its comprehensive Tourism and Hospitality Training Program, a initiative designed to build local capacity in the tourism sector.
+    fullContent: `The Akwa Ibom Hotels and Tourism Development Commission has successfully graduated 500 young professionals from its comprehensive Tourism and Hospitality Training Program, a initiative designed to build local capacity in the tourism sector.
 
 The six-month intensive program covered various aspects of the hospitality industry:
 
@@ -120,7 +120,7 @@ Employment outcomes:
 - 20% starting their own tourism-related businesses
 - Remaining graduates undergoing further specialized training
 
-The Chairman of the Board announced plans to expand the program to accommodate 1,000 participants annually, with the goal of making Akwa Ibom the human resource capital of the Nigerian tourism industry.
+The Chairman of the Commission announced plans to expand the program to accommodate 1,000 participants annually, with the goal of making Akwa Ibom the human resource capital of the Nigerian tourism industry.
 
 Graduates received certificates and starter kits to help them begin their careers in the hospitality sector.`,
     date: "October 22, 2024",

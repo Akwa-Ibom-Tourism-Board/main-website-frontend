@@ -64,7 +64,7 @@ const QuickServices = () => {
             Our Services
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            The Akwa Ibom Hotels and Tourism Board provides a range of services to support 
+            The Akwa Ibom Hotels and Tourism Development Commission provides a range of services to support 
             the growth and development of the tourism sector
           </p>
         </div>

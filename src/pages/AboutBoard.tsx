@@ -108,7 +108,7 @@ const AboutBoard = () => {
             {/* Text */}
             <div className="flex flex-col justify-center space-y-4">
               <h2 className="font-display text-3xl font-bold text-primary mb-4">
-                Message from the Board Chairman
+                Message from the Chairman
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 Welcome to the Akwa Ibom State Hotels and Tourism Development Commission. Our

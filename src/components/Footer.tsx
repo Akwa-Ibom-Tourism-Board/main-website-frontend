@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm opacity-90">
-          <p>&copy; {new Date().getFullYear()} Akwa Ibom State Hotels and Tourism Board. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Akwa Ibom State Hotels and Tourism Development Commission. All rights reserved.</p>
         </div>
       </div>
     </footer>

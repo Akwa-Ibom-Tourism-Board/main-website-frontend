@@ -17,7 +17,7 @@ const announcements: Announcement[] = [
     id: 1,
     title: "2025 Tourism Festival Announced",
     preview: "Join us for the biggest tourism celebration in the South-South region...",
-    fullText: "The Akwa Ibom State Hotels and Tourism Board is excited to announce the 2025 Tourism Festival, scheduled to take place from December 15-22. This year's festival promises to be the biggest celebration of culture, hospitality, and tourism in the South-South region. Activities include cultural performances, food festivals, beach carnivals, and hotel exhibitions. All registered hotels and tour operators are invited to participate.",
+    fullText: "The Akwa Ibom State Hotels and Tourism Development Commission is excited to announce the 2025 Tourism Festival, scheduled to take place from December 15-22. This year's festival promises to be the biggest celebration of culture, hospitality, and tourism in the South-South region. Activities include cultural performances, food festivals, beach carnivals, and hotel exhibitions. All registered hotels and tour operators are invited to participate.",
     date: "November 15, 2025",
     link: "https://akwaibomtourism.com/festival"
   },
@@ -25,7 +25,7 @@ const announcements: Announcement[] = [
     id: 2,
     title: "New Hotel Registration Guidelines",
     preview: "Updated requirements for hotel operators seeking registration...",
-    fullText: "The Board has released updated guidelines for hotel registration effective January 2025. All hotel operators must ensure compliance with the new safety standards, hygiene protocols, and service quality benchmarks. Applications can be submitted online through our portal. Existing registered hotels have until March 2025 to update their documentation.",
+    fullText: "The Commission has released updated guidelines for hotel registration effective January 2025. All hotel operators must ensure compliance with the new safety standards, hygiene protocols, and service quality benchmarks. Applications can be submitted online through our portal. Existing registered hotels have until March 2025 to update their documentation.",
     date: "November 10, 2025"
   },
   {
@@ -81,7 +81,7 @@ const Announcements = () => {
             Events & Conferences
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Stay updated with the latest events and conferences from the Akwa Ibom Hotels and Tourism Board
+            Stay updated with the latest events and conferences from the Akwa Ibom Hotels and Tourism Development Commission
           </p>
         </div>
 
