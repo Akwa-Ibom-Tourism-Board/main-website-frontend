@@ -2,7 +2,7 @@
 
 Internal Project Documentation
 
-This repository contains the source code for a private, production-grade tourism website built for the Akwa Ibom State Hotels & Tourism Board.
+This repository contains the source code for a private, production-grade tourism website built for the Akwa Ibom State Hotels & Tourism Development Commission.
 The application highlights key attractions, hotels, cultural elements, and visitor information for potential tourists and partners.
 
 1. Overview

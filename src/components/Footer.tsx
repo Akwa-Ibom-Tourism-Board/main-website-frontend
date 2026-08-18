@@ -12,7 +12,7 @@ const Footer = () => {
               <img src={logo} alt="Logo" className="h-20 w-20" />
               <div>
                 <div className="font-display text-lg font-bold">Akwa Ibom State</div>
-                <div className="text-xs opacity-90">Hotels & Tourism Board</div>
+                <div className="text-xs opacity-90">Hotels & Tourism Development Commission</div>
               </div>
             </div>
             <p className="text-sm opacity-90">
@@ -37,7 +37,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm opacity-90">
               <li className="flex items-start space-x-2">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>Akwa Ibom State Hotels & Tourism Board, Uyo, Nigeria</span>
+                <span>Akwa Ibom State Hotels & Tourism Development Commission, Uyo, Nigeria</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={16} className="flex-shrink-0" />
