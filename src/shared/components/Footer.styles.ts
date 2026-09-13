@@ -137,7 +137,7 @@ export const BottomBar = styled.div`
   color: ${({ theme }) => theme.alpha(theme.colors.white, 0.6)};
 `;
 
-export const BackToTopButton = styled.button`
+export const BackToTopButton = styled.button<{ $visible: boolean }>`
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
@@ -153,7 +153,10 @@ export const BackToTopButton = styled.button`
   background: ${({ theme }) => theme.colors.secondary.DEFAULT};
   color: ${({ theme }) => theme.colors.secondary.foreground};
   box-shadow: ${({ theme }) => theme.shadows.lg};
-  transition: background-color ${({ theme }) => theme.transitions.fast}, transform ${({ theme }) => theme.transitions.fast};
+  opacity: ${({ $visible }) => ($visible ? 1 : 0)};
+  transform: translateY(${({ $visible }) => ($visible ? "0" : "0.75rem")});
+  pointer-events: ${({ $visible }) => ($visible ? "auto" : "none")};
+  transition: opacity ${({ theme }) => theme.transitions.base}, transform ${({ theme }) => theme.transitions.base}, background-color ${({ theme }) => theme.transitions.fast};
 
   &:hover {
     background: ${({ theme }) => theme.alpha(theme.colors.secondary.DEFAULT, 0.9)};

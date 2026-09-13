@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { media, fadeIn, glowPulse } from "@/theme";
 
-// The TopBar above this is a single slim line (~3rem, ~3.25rem from `sm`),
-// so this offset stays constant instead of jumping at a breakpoint.
+// Must track TopBar's own height exactly (3rem below `sm`, 3.25rem from
+// `sm` up) — any mismatch leaves a gap between the two fixed bars.
 export const Nav = styled.nav`
   position: fixed;
-  top: 3.25rem;
+  top: 3rem;
   left: 0;
   right: 0;
   z-index: ${({ theme }) => theme.zIndex.navbar};
@@ -14,6 +14,10 @@ export const Nav = styled.nav`
   backdrop-filter: blur(4px);
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
   box-shadow: ${({ theme }) => theme.shadows.sm};
+
+  ${media.sm} {
+    top: 3.25rem;
+  }
 `;
 
 export const Inner = styled.div`

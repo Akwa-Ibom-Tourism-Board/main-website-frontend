@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   Mail,
   Phone,
@@ -29,7 +30,18 @@ import {
   BackToTopButton,
 } from "./Footer.styles";
 
+const BACK_TO_TOP_THRESHOLD = 400;
+
 const Footer = () => {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setShowBackToTop(window.scrollY > BACK_TO_TOP_THRESHOLD);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <FooterEl id="contact">
       <Container>
@@ -117,8 +129,11 @@ const Footer = () => {
       </Container>
 
       <BackToTopButton
+        $visible={showBackToTop}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         aria-label="Back to top"
+        aria-hidden={!showBackToTop}
+        tabIndex={showBackToTop ? 0 : -1}
       >
         <ArrowUp size={20} />
       </BackToTopButton>
