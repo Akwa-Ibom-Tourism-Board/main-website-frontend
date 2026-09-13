@@ -4,6 +4,7 @@ import natureImg from "@/assets/nature.jpg";
 import cultureImg from "@/assets/culture.jpg";
 import ibenoImg from "@/assets/ibeno-beach.webp";
 import ibomStadiumImg from "@/assets/ibom-stadium.webp";
+import amalgamationHouse from "@/assets/amalgamate.jpeg"
 import {
   Section,
   Heading,
@@ -37,7 +38,7 @@ const destinations = [
     icon: Camera,
     title: "Cultural Heritage Sites",
     description: "Explore ancient traditions, art, and the vibrant culture of the Ibibio people",
-    image: cultureImg,
+    image: amalgamationHouse,
   },
   {
     icon: MapPin,

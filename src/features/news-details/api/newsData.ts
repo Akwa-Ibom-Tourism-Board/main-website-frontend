@@ -1,7 +1,7 @@
 import heroBeach from "@/assets/hero-beach.jpg";
-import culture from "@/assets/culture.jpg";
 import hotel from "@/assets/hotel.jpg";
 import nature from "@/assets/nature.jpg";
+import culturalMenImg from "@/assets/men-dance.png";
 import type { NewsItem } from "../types";
 
 // Static for now; swap the body of this module for a real API call when
@@ -61,7 +61,7 @@ The Governor commended the investors for their commitment to sustainable develop
     id: "cultural-festival-success",
     title: "Ibom Cultural Festival Attracts 50,000 Visitors",
     description: "The annual celebration of Akwa Ibom heritage drew record attendance from across Africa.",
-    image: culture,
+    image: culturalMenImg,
     fullContent: `The 2024 edition of the Ibom Cultural Festival has been declared the most successful in its history, attracting over 50,000 visitors from Nigeria and across Africa over its seven-day duration.
 
 The festival, organized by the Akwa Ibom State Hotels and Tourism Development Commission in partnership with the Ministry of Culture and Tourism, showcased the rich cultural heritage of the state through various activities:

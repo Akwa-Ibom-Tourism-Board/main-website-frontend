@@ -33,8 +33,14 @@ const navItems: NavItemWithDropdown[] = [
     items: [
       { name: "Tour Operators", href: "/tourism/tour-operators" },
       { name: "Group Tours", href: "/tourism/group-tours" },
-      { name: "Prestigious Destinations", href: "/tourism/prestigious-destinations" },
-      { name: "Restaurants & Fine Dining", href: "/tourism/restaurants-fine-dining" },
+      {
+        name: "Prestigious Destinations",
+        href: "/tourism/prestigious-destinations",
+      },
+      {
+        name: "Restaurants & Fine Dining",
+        href: "/tourism/restaurants-fine-dining",
+      },
     ],
   },
   {
@@ -48,9 +54,15 @@ const navItems: NavItemWithDropdown[] = [
   {
     name: "Commission",
     items: [
-      { name: "About the Commission", href: "/about-akwa-ibom-state-tourism-board" },
+      {
+        name: "About the Commission",
+        href: "/about-akwa-ibom-state-tourism-board",
+      },
       { name: "Conferences & Events", href: "/the-board/conferences-events" },
-      { name: "Organizational Structure", href: "/the-board/organizational-structure" },
+      {
+        name: "Organizational Structure",
+        href: "/the-board/organizational-structure",
+      },
     ],
   },
 ];
@@ -66,7 +78,9 @@ const Navbar = () => {
             <LogoImg src={logo} alt="Akwa Ibom Tourism" />
             <BrandText>
               <BrandTitle>Akwa Ibom State</BrandTitle>
-              <BrandSubtitle>Hotels & Tourism Development Commission</BrandSubtitle>
+              <BrandSubtitle>
+                Hotels & Tourism Development Commission
+              </BrandSubtitle>
             </BrandText>
           </BrandLink>
 
@@ -90,7 +104,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Mbopo Akwa Ibom
+              Mbobpo Akwa Ibom
             </NavCtaButtonOutline>
           </DesktopLinks>
 
@@ -110,11 +124,14 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Mbopo
+              Mbobpo
             </CompactCtaButtonOutline>
           </CompactCtaGroup>
 
-          <MenuButton onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+          <MenuButton
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </MenuButton>
         </Row>
@@ -126,9 +143,17 @@ const Navbar = () => {
                 Home
               </MobileNavItemLink>
               {navItems.map((item) => (
-                <NavDropdown key={item.name} item={item} mobile onItemClick={() => setIsMenuOpen(false)} />
+                <NavDropdown
+                  key={item.name}
+                  item={item}
+                  mobile
+                  onItemClick={() => setIsMenuOpen(false)}
+                />
               ))}
-              <MobileNavItemLink to="/#contact" onClick={() => setIsMenuOpen(false)}>
+              <MobileNavItemLink
+                to="/#contact"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Contact
               </MobileNavItemLink>
             </MobileLinks>

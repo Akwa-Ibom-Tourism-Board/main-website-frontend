@@ -1,11 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/shared/ui";
 import { Container, GlowWrap } from "@/shared/components";
-import hotelImg from "@/assets/hotel.jpg";
-import cultureImg from "@/assets/culture.jpg";
+import mbobpoImg from "@/assets/mbopo-group.jpeg"
 import leMeridienImg from "@/assets/le-meridien.jpeg";
-import ibenoImg from "@/assets/ibeno-beach.webp";
-import fourPointsImg from "@/assets/four-points.jpg";
 import {
   Section,
   Heading,
@@ -47,18 +44,18 @@ const currentEvents: CurrentEvent[] = [
     title: "Register Your Hospitality Establishment",
     description:
       "Hotels, guest houses, and other hospitality businesses can register with the Commission for licensing and promotion.",
-    image: hotelImg,
+    image: leMeridienImg,
     ctaLabel: "Register Now",
     ctaLink: REGISTER_ESTABLISHMENT_URL,
     glow: true,
   },
   {
     id: "mbopo-akwa-ibom",
-    title: "Mbopo Akwa Ibom Pageant",
+    title: "Mbobpo Akwa Ibom Pageant",
     description:
-      "Celebrate culture and heritage — register to represent Akwa Ibom at the Mbopo Akwa Ibom pageant.",
-    image: cultureImg,
-    ctaLabel: "Register for Mbopo",
+      "Celebrate culture and heritage — register to represent Akwa Ibom at the Mbobpo Akwa Ibom pageant.",
+    image: mbobpoImg,
+    ctaLabel: "Register for Mbobpo",
     ctaLink: MBOPO_AKWA_IBOM_URL,
   },
   // {
@@ -93,8 +90,8 @@ const CurrentEvents = () => {
           <Eyebrow>Get Involved</Eyebrow>
           <Title>Current Events</Title>
           <Lede>
-            From cultural celebrations to community initiatives — here&apos;s what&apos;s happening across Akwa
-            Ibom State right now.
+            From cultural celebrations to community initiatives — here&apos;s
+            what&apos;s happening across Akwa Ibom State right now.
           </Lede>
         </Heading>
 
@@ -108,7 +105,11 @@ const CurrentEvents = () => {
                 <CardTitle>{event.title}</CardTitle>
                 <Description>{event.description}</Description>
                 {event.ctaLabel ? (
-                  <a href={event.ctaLink} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={event.ctaLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {event.glow ? (
                       <GlowWrap>
                         <Button variant="secondary">{event.ctaLabel}</Button>

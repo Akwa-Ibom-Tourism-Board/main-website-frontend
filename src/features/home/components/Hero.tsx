@@ -94,7 +94,7 @@ const heroSlides: HeroSlide[] = [
   },
   {
     image: mbopoFlier,
-    title: "Mbopo Akwa Ibom: Beauty with Purpose",
+    title: "Mbobpo Akwa Ibom: Beauty with Purpose",
     subtitle:
       "Applications are open for young women across all 31 local government areas to become Akwa Ibom's next State Tourism Ambassador.",
     ctaLabel: "Apply Now",
@@ -157,7 +157,7 @@ const Hero = () => {
               size={16}
               fill={theme.colors.highlightMuted}
             />
-            <EyebrowText>Nigeria&apos;s Hidden Gem</EyebrowText>
+            <EyebrowText>Akwa Ibom: Nigeria&apos;s Hidden Gem</EyebrowText>
           </Eyebrow>
 
           <Title key={`title-${current}`}>{heroSlides[current].title}</Title>

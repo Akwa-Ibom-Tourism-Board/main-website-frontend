@@ -1,6 +1,6 @@
 import { Music, Palette, Calendar, Users } from "lucide-react";
 import { Container } from "@/shared/components";
-import cultureImg from "@/assets/culture.jpg";
+import culturalMenImg from "@/assets/men-dance.png";
 import {
   Section,
   Grid,
@@ -45,7 +45,7 @@ const Culture = () => {
       <Container>
         <Grid>
           <ImageFrame>
-            <Image src={cultureImg} alt="Cultural performance" />
+            <Image src={culturalMenImg} alt="Cultural performance" />
             <ImageScrim />
           </ImageFrame>
 
