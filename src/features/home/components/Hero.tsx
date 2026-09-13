@@ -41,7 +41,7 @@ interface HeroSlide {
   // Gives the CTA a constant glow halo (used for the hospitality-
   // registration slide so it matches the same CTA elsewhere on the page).
   glow?: boolean;
-  isRedirect?:boolean;
+  isRedirect?: boolean;
 }
 
 // TODO: swap these placeholder titles/subtitles/CTAs for real copy per destination.
@@ -79,7 +79,7 @@ const heroSlides: HeroSlide[] = [
       "Experience international five-star comfort and service in the heart of Akwa Ibom State.",
     ctaLabel: "Explore Hotels",
     ctaLink: "/#hotels",
-    isCtaRequired: true,
+    isCtaRequired: false,
   },
   {
     image: registrationImg,
@@ -99,7 +99,7 @@ const heroSlides: HeroSlide[] = [
       "Applications are open for young women across all 31 local government areas to become Akwa Ibom's next State Tourism Ambassador.",
     ctaLabel: "Apply Now",
     glow: true,
-    ctaLink: "/#hotels",
+    ctaLink: "https://mbopo-akwa-ibom-design.vercel.app/",
     isCtaRequired: true,
     isRedirect: true,
   },
@@ -121,7 +121,17 @@ const HeroCta = ({ slide }: { slide: HeroSlide }) => {
 
   const content = slide.glow ? <GlowWrap>{button}</GlowWrap> : button;
 
-  return slide.ctaLink ? <Link to={slide.ctaLink}>{content}</Link> : content;
+  if (!slide.ctaLink) return content;
+
+  if (slide.isRedirect) {
+    return (
+      <a href={slide.ctaLink} target="_blank" rel="noopener noreferrer">
+        {content}
+      </a>
+    );
+  }
+
+  return <Link to={slide.ctaLink}>{content}</Link>;
 };
 
 const Hero = () => {

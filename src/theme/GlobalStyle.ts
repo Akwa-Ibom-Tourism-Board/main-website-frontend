@@ -10,6 +10,9 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
+    /* Keeps hash-linked sections (#hotels, #contact, ...) from landing
+       underneath the fixed TopBar + Navbar when scrolled/jumped to. */
+    scroll-padding-top: 7.5rem;
   }
 
   body {
