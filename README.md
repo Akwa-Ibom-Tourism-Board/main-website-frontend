@@ -27,9 +27,9 @@ TypeScript
 
 Vite (build tooling & dev server)
 
-Tailwind CSS
+styled-components (theming and component styling)
 
-shadcn/ui + Radix UI (component system)
+Radix UI primitives (dialog, toast, tooltip)
 
 React Router v6
 
@@ -40,23 +40,26 @@ Lucide Icons
 These technologies ensure long-term maintainability, fast performance, and design consistency.
 
 3. Application Structure
+
+The codebase follows a feature-based architecture: each feature under `src/features/` owns its own `pages/`, `components/`, and (where relevant) `types/`/`api/`, rather than grouping files by type across the whole app.
+
 src/
- ├── App.tsx                  # Application root and router
- ├── pages/
- │    ├── Index.tsx           # Main landing page
- │    └── NotFound.tsx        # Fallback page
- ├── components/
- │    ├── Navbar.tsx
- │    ├── Hero.tsx
- │    ├── Destinations.tsx
- │    ├── Hotels.tsx
- │    ├── Culture.tsx
- │    └── Footer.tsx
- ├── assets/                  # Images and static assets
- └── components/ui/           # shadcn/ui component library
+ ├── app/                     # App root, providers (ThemeProvider, React Query, Tooltip), and route table
+ ├── theme/                   # Design tokens: colors, fonts, radii, shadows, breakpoints, animations, useTheme hook
+ ├── shared/
+ │    ├── ui/                 # Reusable styled-components primitives (Button, Card, Dialog, Tooltip, Toast, Sonner)
+ │    └── components/         # Shared layout: Navbar, TopBar, Footer, PageShell, PageHeroBanner, Container
+ ├── features/
+ │    ├── home/               # Landing page and its sections (Hero, Announcements, Destinations, Hotels, Culture...)
+ │    ├── news-details/       # News data/types + the news grid widget + the news detail page
+ │    ├── about-board/        # About the Commission page
+ │    ├── about-akwa-ibom/    # About Akwa Ibom, Culture & Heritage, Calendar of Activities
+ │    ├── the-board/          # Conferences & Events, Organizational Structure
+ │    ├── tourism-page/       # Tour Operators, Group Tours, Prestigious Destinations, Restaurants & Dining
+ │    └── not-found/          # 404 page
+ └── assets/                  # Images and static assets
 
-
-The Index page composes all primary sections of the website.
+Every page is composed inside `<PageShell>` (top bar, nav, footer, and the site-wide registration modal) and, for the common ~40vh page banner, `<PageHeroBanner>`. All colors, fonts, spacing, shadows, and breakpoints come from the theme object in `src/theme/theme.ts` via `styled-components`' `ThemeProvider` — components read them with `theme.colors.*` inside styled templates, or the `useTheme()` hook from `src/theme` when a value is needed outside a styled template (e.g. to color a `lucide-react` icon).
 
 4. Features
 4.1 Content Sections
