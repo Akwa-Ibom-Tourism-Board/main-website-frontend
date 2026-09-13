@@ -10,7 +10,7 @@ interface PageShellProps {
   children: ReactNode;
 }
 
-const REGISTRATION_URL = "https://hotel-management-frontend-mu.vercel.app/";
+const REGISTRATION_URL = "https://register.akhtdc.com.ng";
 
 const PageShell = ({ children }: PageShellProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);

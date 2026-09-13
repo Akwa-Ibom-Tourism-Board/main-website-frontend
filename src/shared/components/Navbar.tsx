@@ -24,6 +24,9 @@ import {
   MobileNavItemLink,
 } from "./Navbar.styles";
 
+const REGISTER_ESTABLISHMENT_URL = "https://register.akhtdc.com.ng";
+const MBOPO_AKWA_IBOM_URL = "https://mbopo-akwa-ibom-design.vercel.app/";
+
 const navItems: NavItemWithDropdown[] = [
   {
     name: "Tourism",
@@ -73,15 +76,42 @@ const Navbar = () => {
               <NavDropdown key={item.name} item={item} />
             ))}
             <NavItemLink to="/#contact">Contact</NavItemLink>
-            {/* Placeholder CTAs — no destination wired yet, on purpose */}
-            <NavCtaButton type="button">Register Establishment</NavCtaButton>
-            <NavCtaButtonOutline type="button">Mbopo Akwa Ibom</NavCtaButtonOutline>
+            <NavCtaButton
+              as="a"
+              href={REGISTER_ESTABLISHMENT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register Establishment
+            </NavCtaButton>
+            <NavCtaButtonOutline
+              as="a"
+              href={MBOPO_AKWA_IBOM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mbopo Akwa Ibom
+            </NavCtaButtonOutline>
           </DesktopLinks>
 
-          {/* Always visible below `md`, so these don't wait behind the hamburger menu. Placeholder CTAs — no destination wired yet, on purpose */}
+          {/* Always visible below `md`, so these don't wait behind the hamburger menu. */}
           <CompactCtaGroup>
-            <CompactCtaButton type="button">Register</CompactCtaButton>
-            <CompactCtaButtonOutline type="button">Mbopo</CompactCtaButtonOutline>
+            <CompactCtaButton
+              as="a"
+              href={REGISTER_ESTABLISHMENT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register
+            </CompactCtaButton>
+            <CompactCtaButtonOutline
+              as="a"
+              href={MBOPO_AKWA_IBOM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mbopo
+            </CompactCtaButtonOutline>
           </CompactCtaGroup>
 
           <MenuButton onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">

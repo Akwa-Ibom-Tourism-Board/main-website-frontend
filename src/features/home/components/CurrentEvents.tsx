@@ -30,10 +30,15 @@ interface CurrentEvent {
   // Only the two "get involved" cards carry a CTA button for now — the
   // rest read as plain informational cards until real event pages exist.
   ctaLabel?: string;
+  // External registration URL the CTA opens in a new tab.
+  ctaLink?: string;
   // Gives the CTA a constant glow halo (matches the same CTA in the Navbar
   // and Hero carousel).
   glow?: boolean;
 }
+
+const REGISTER_ESTABLISHMENT_URL = "https://register.akhtdc.com.ng";
+const MBOPO_AKWA_IBOM_URL = "https://mbopo-akwa-ibom-design.vercel.app/";
 
 // TODO: swap this placeholder list for real, live events.
 const currentEvents: CurrentEvent[] = [
@@ -44,6 +49,7 @@ const currentEvents: CurrentEvent[] = [
       "Hotels, guest houses, and other hospitality businesses can register with the Commission for licensing and promotion.",
     image: hotelImg,
     ctaLabel: "Register Now",
+    ctaLink: REGISTER_ESTABLISHMENT_URL,
     glow: true,
   },
   {
@@ -53,6 +59,7 @@ const currentEvents: CurrentEvent[] = [
       "Celebrate culture and heritage — register to represent Akwa Ibom at the Mbopo Akwa Ibom pageant.",
     image: cultureImg,
     ctaLabel: "Register for Mbopo",
+    ctaLink: MBOPO_AKWA_IBOM_URL,
   },
   // {
   //   id: "investment-summit",
@@ -75,8 +82,9 @@ const currentEvents: CurrentEvent[] = [
   // },
 ];
 
-// Cards are visually clickable (hover state) but intentionally carry no
-// onClick/href yet — routing is being wired up separately.
+// Cards are visually clickable (hover state) but only the CTA buttons link
+// out (to the two external registration sites) — the cards themselves have
+// no destination yet since there are no real event detail pages.
 const CurrentEvents = () => {
   return (
     <Section>
@@ -100,13 +108,15 @@ const CurrentEvents = () => {
                 <CardTitle>{event.title}</CardTitle>
                 <Description>{event.description}</Description>
                 {event.ctaLabel ? (
-                  event.glow ? (
-                    <GlowWrap>
+                  <a href={event.ctaLink} target="_blank" rel="noopener noreferrer">
+                    {event.glow ? (
+                      <GlowWrap>
+                        <Button variant="secondary">{event.ctaLabel}</Button>
+                      </GlowWrap>
+                    ) : (
                       <Button variant="secondary">{event.ctaLabel}</Button>
-                    </GlowWrap>
-                  ) : (
-                    <Button variant="secondary">{event.ctaLabel}</Button>
-                  )
+                    )}
+                  </a>
                 ) : (
                   <ViewDetails>
                     View Details <ArrowRight size={16} />

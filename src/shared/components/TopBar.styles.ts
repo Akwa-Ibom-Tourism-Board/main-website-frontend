@@ -109,7 +109,7 @@ export const HotelIconSlot = styled.div`
   }
 `;
 
-export const RegisterButton = styled.button`
+export const RegisterButton = styled.a`
   display: flex;
   align-items: center;
   flex-shrink: 0;
