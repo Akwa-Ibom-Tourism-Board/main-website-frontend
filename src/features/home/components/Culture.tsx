@@ -30,7 +30,8 @@ const highlights = [
   {
     icon: Calendar,
     title: "Cultural Festivals",
-    description: "Join vibrant celebrations like the Christmas Village Festival",
+    description:
+      "Join vibrant celebrations like the Christmas Village Festival",
   },
   {
     icon: Users,
@@ -52,8 +53,8 @@ const Culture = () => {
           <div>
             <Title>Rich Cultural Heritage</Title>
             <Lede>
-              Immerse yourself in the vibrant traditions, art, and customs of the Ibibio, Annang, and Oron people
-              that make Akwa Ibom unique.
+              Immerse yourself in the vibrant traditions, art, and customs of
+              the Ibibio, Annang, and Oron people that make Akwa Ibom unique.
             </Lede>
 
             <HighlightGrid>
@@ -64,7 +65,9 @@ const Culture = () => {
                   </HighlightIcon>
                   <div>
                     <HighlightTitle>{item.title}</HighlightTitle>
-                    <HighlightDescription>{item.description}</HighlightDescription>
+                    <HighlightDescription>
+                      {item.description}
+                    </HighlightDescription>
                   </div>
                 </HighlightItem>
               ))}
