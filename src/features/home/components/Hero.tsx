@@ -94,7 +94,7 @@ const heroSlides: HeroSlide[] = [
   },
   {
     image: mbopoFlier,
-    title: "Mbobpo Akwa Ibom: Beauty with Purpose",
+    title: "Mbopo Akwa Ibom: Beauty with Purpose",
     subtitle:
       "Applications are open for young women across all 31 local government areas to become Akwa Ibom's next State Tourism Ambassador.",
     ctaLabel: "Apply Now",

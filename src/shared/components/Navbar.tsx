@@ -104,7 +104,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Mbobpo Akwa Ibom
+              Mbopo Akwa Ibom
             </NavCtaButtonOutline>
           </DesktopLinks>
 
@@ -124,7 +124,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Mbobpo
+              Mbopo
             </CompactCtaButtonOutline>
           </CompactCtaGroup>
 

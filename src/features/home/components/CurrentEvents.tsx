@@ -51,11 +51,11 @@ const currentEvents: CurrentEvent[] = [
   },
   {
     id: "mbopo-akwa-ibom",
-    title: "Mbobpo Akwa Ibom Pageant",
+    title: "Mbopo Akwa Ibom Pageant",
     description:
-      "Celebrate culture and heritage — register to represent Akwa Ibom at the Mbobpo Akwa Ibom pageant.",
+      "Celebrate culture and heritage — register to represent Akwa Ibom at the Mbopo Akwa Ibom pageant.",
     image: mbobpoImg,
-    ctaLabel: "Register for Mbobpo",
+    ctaLabel: "Register for Mbopo",
     ctaLink: MBOPO_AKWA_IBOM_URL,
   },
   // {
