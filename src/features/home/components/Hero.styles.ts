@@ -180,10 +180,10 @@ export const SlideLayer = styled.div<{ $active: boolean }>`
   opacity: ${({ $active }) => ($active ? 1 : 0)};
 `;
 
-export const SlideImage = styled.img`
+export const SlideImage = styled.img<{ $objectFit: "contain" | "cover" }>`
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: ${({ $objectFit }) => $objectFit};
 `;
 
 export const Indicators = styled.div`

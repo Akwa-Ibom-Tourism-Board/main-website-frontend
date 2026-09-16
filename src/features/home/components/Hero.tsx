@@ -10,6 +10,8 @@ import fourpoint from "@/assets/four-points.png";
 import logo from "@/assets/logo-main.png";
 import governorImg from "@/assets/governor-image-2.webp";
 import registrationImg from "@/assets/hotel-registration-flier.jpeg";
+import arisePark1 from "@/assets/hero/arise-park-1.jpeg";
+import arisePark2 from "@/assets/hero/arise-park-2.jpg";
 import {
   Section,
   Glow,
@@ -42,6 +44,10 @@ interface HeroSlide {
   // registration slide so it matches the same CTA elsewhere on the page).
   glow?: boolean;
   isRedirect?: boolean;
+  // Most slide images are transparent cutouts, best shown with `contain`.
+  // The Arise Park photos are full-bleed photographs, so they look better
+  // filling the frame with `cover`.
+  objectFit?: "contain" | "cover";
 }
 
 // TODO: swap these placeholder titles/subtitles/CTAs for real copy per destination.
@@ -80,6 +86,22 @@ const heroSlides: HeroSlide[] = [
     ctaLabel: "Explore Hotels",
     ctaLink: "/#hotels",
     isCtaRequired: false,
+  },
+  {
+    image: arisePark2,
+    title: "Arise Park: Where Family Fun Comes Alive",
+    subtitle:
+      "From Ferris wheels to carousel rides, Arise Park offers unforgettable family entertainment in the heart of Akwa Ibom.",
+    isCtaRequired: false,
+    objectFit: "cover",
+  },
+  {
+    image: arisePark1,
+    title: "A Landmark Night for Arise Park",
+    subtitle:
+      "Celebrating the grand commissioning of Arise Park's world-class recreational facilities.",
+    isCtaRequired: false,
+    objectFit: "cover",
   },
   {
     image: registrationImg,
@@ -180,6 +202,7 @@ const Hero = () => {
                 <SlideImage
                   src={slide.image}
                   alt={`Akwa Ibom tourism ${index + 1}`}
+                  $objectFit={slide.objectFit ?? "contain"}
                 />
               </SlideLayer>
             ))}
