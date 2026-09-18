@@ -74,7 +74,7 @@ const AboutAkwaIbomPage = () => {
           <Paragraph>
             The state boasts modern infrastructure including the Victor Attah International Airport, the Ibom Power
             Plant, excellent road networks, and the under-construction Ibom Deep Seaport. The Ibom Icon Hotel & Golf
-            Resort represents the state's commitment to world-class tourism infrastructure.
+            Resort represents the state's commitment to world class tourism infrastructure.
           </Paragraph>
         </Inner>
       </ContentSection>

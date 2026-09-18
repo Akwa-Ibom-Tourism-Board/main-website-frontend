@@ -1,10 +1,11 @@
-import { MapPin, Waves, Mountain, Camera } from "lucide-react";
+import { MapPin, Waves, Mountain, Camera, FerrisWheel } from "lucide-react";
 import { Container } from "@/shared/components";
 import natureImg from "@/assets/nature.jpg";
 import cultureImg from "@/assets/culture.jpg";
 import ibenoImg from "@/assets/ibeno-beach.webp";
 import ibomStadiumImg from "@/assets/ibom-stadium.webp";
 import amalgamationHouse from "@/assets/amalgamate.jpeg"
+import arisePark2 from "@/assets/hero/arise-park-2.jpg";
 import {
   Section,
   Heading,
@@ -43,8 +44,14 @@ const destinations = [
   {
     icon: MapPin,
     title: "Godswill Akpabio International Stadium",
-    description: "World-class modern facilities and entertainment venues",
+    description: "World class modern facilities and entertainment venues",
     image: ibomStadiumImg,
+  },
+  {
+    icon: FerrisWheel,
+    title: "Arise Resorts & Theme Park",
+    description: "Ferris wheels, carousel rides, and green open spaces for the whole family to enjoy",
+    image: arisePark2,
   },
 ];
 

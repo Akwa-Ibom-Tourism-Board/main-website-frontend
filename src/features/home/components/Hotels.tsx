@@ -60,7 +60,7 @@ const Hotels = () => {
     <Section id="hotels">
       <Container>
         <Heading>
-          <Title>World-Class Accommodations</Title>
+          <Title>World Class Accommodations</Title>
           <Lede>Experience luxury and comfort at our finest hotels and resorts</Lede>
         </Heading>
 

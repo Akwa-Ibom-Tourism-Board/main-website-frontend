@@ -57,7 +57,7 @@ const heroSlides: HeroSlide[] = [
     title:
       "Welcome to Akwa Ibom State Hotels and Tourism Development Commission",
     subtitle:
-      "Curating world-class hospitality, and unforgettable adventures in the land of promise.",
+      "Curating world class hospitality, and unforgettable adventures in the land of promise.",
     ctaLabel: "About Us",
     ctaLink: "/about-akwa-ibom-state-tourism-board",
     isCtaRequired: true,
@@ -80,26 +80,26 @@ const heroSlides: HeroSlide[] = [
   },
   {
     image: fourpoint,
-    title: "World-Class Hospitality at World-Class Hotels",
+    title: "World Class Hospitality at World Class Hotels",
     subtitle:
-      "Experience international five-star comfort and service in the heart of Akwa Ibom State.",
+      "Experience international five star comfort and service in the heart of Akwa Ibom State.",
     ctaLabel: "Explore Hotels",
     ctaLink: "/#hotels",
     isCtaRequired: false,
   },
   {
     image: arisePark2,
-    title: "Arise Park: Where Family Fun Comes Alive",
+    title: "Arise Resorts & Theme Park: Where Family Fun Comes Alive",
     subtitle:
-      "From Ferris wheels to carousel rides, Arise Park offers unforgettable family entertainment in the heart of Akwa Ibom.",
+      "From Ferris wheels to carousel rides, Arise Resorts & Theme Park offers unforgettable family entertainment in the heart of Akwa Ibom.",
     isCtaRequired: false,
     objectFit: "cover",
   },
   {
     image: arisePark1,
-    title: "A Landmark Night for Arise Park",
+    title: "A Landmark Night for Arise Resorts & Theme Park",
     subtitle:
-      "Celebrating the grand commissioning of Arise Park's world-class recreational facilities.",
+      "Celebrating the grand commissioning of Arise Resorts & Theme Park's world class recreational facilities.",
     isCtaRequired: false,
     objectFit: "cover",
   },

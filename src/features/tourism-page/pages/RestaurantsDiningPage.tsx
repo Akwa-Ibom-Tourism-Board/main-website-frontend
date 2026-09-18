@@ -39,7 +39,7 @@ const RestaurantsDiningPage = () => {
     <PageShell>
       <PageHeroBanner
         title="Restaurants & Fine Dining"
-        subtitle="Savor exquisite cuisines from world-class restaurants"
+        subtitle="Savor exquisite cuisines from world class restaurants"
         tint="panel"
         titleColor="white"
         subtitleColor="white"

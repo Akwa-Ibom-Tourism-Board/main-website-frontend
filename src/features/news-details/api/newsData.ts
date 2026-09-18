@@ -2,11 +2,35 @@ import heroBeach from "@/assets/hero-beach.jpg";
 import hotel from "@/assets/hotel.jpg";
 import nature from "@/assets/nature.jpg";
 import culturalMenImg from "@/assets/men-dance.png";
+import arisePark1 from "@/assets/hero/arise-park-1.jpeg";
 import type { NewsItem } from "../types";
 
 // Static for now; swap the body of this module for a real API call when
 // the Commission gets a news backend — the exported shape stays the same.
 export const newsData: NewsItem[] = [
+  {
+    id: "arise-park-commissioning",
+    title:
+      "Arise Resorts & Theme Park Officially Commissioned as Akwa Ibom's Newest Family Attraction",
+    description:
+      "The state's newest recreational park opened its doors with rides, green spaces, and entertainment for the whole family.",
+    image: arisePark1,
+    fullContent: `Akwa Ibom State marked a new milestone in recreational tourism with the official commissioning of Arise Resorts & Theme Park, a state of the art family entertainment destination developed under the state's A.R.I.S.E. agenda.
+
+The commissioning ceremony drew government officials, community leaders, and residents for an evening of celebration, with the park's grounds lit up to showcase its facilities to the public for the first time.
+
+Arise Park features:
+- A Ferris wheel and carousel rides for visitors of all ages
+- Dedicated green spaces and landscaped grounds for family outings
+- Modern event pavilions for community gatherings
+- Ample parking and visitor amenities
+
+Officials described the park as a direct investment in the state's quality of life and tourism appeal, giving residents and visitors alike a safe, modern space for recreation. The Hotels and Tourism Development Commission noted that Arise Park will be integrated into the state's broader tourism promotion efforts, positioning it alongside the state's beaches and cultural sites as a must-visit destination.
+
+The Commission has announced plans to host regular community events at the park in the coming months, further cementing its role as a hub for family entertainment in Akwa Ibom State.`,
+    date: "December 5, 2024",
+    category: "Recreation",
+  },
   {
     id: "tourism-awards-2024",
     title: "Akwa Ibom Wins Best Tourism Destination Award",
@@ -20,7 +44,7 @@ The award ceremony, held at the Transcorp Hilton in Abuja, saw tourism stakehold
 Governor Umo Eno, represented by the Commissioner for Culture and Tourism, expressed gratitude for the recognition, stating that the government remains committed to making Akwa Ibom the preferred destination for both domestic and international tourists.
 
 Key factors that contributed to this achievement include:
-- World-class hospitality facilities including the 5-star Le Meridien Ibom Hotel & Golf Resort
+- World class hospitality facilities including the 5-star Le Meridien Ibom Hotel & Golf Resort
 - Beautiful beaches at Ibeno, one of the longest sand beaches in West Africa
 - Rich cultural heritage and festivals
 - Improved security and tourist-friendly policies
@@ -33,9 +57,10 @@ The Hotels and Tourism Development Commission has announced plans to leverage th
   {
     id: "new-resort-opening",
     title: "New Eco-Resort Opens at Ibeno Beach",
-    description: "A state-of-the-art eco-friendly resort brings sustainable luxury to Akwa Ibom's coastline.",
+    description:
+      "A state of the art eco-friendly resort brings sustainable luxury to Akwa Ibom's coastline.",
     image: hotel,
-    fullContent: `A new chapter in sustainable tourism has begun with the grand opening of the Ibeno Eco-Resort, a world-class facility designed to offer luxury accommodation while maintaining environmental responsibility.
+    fullContent: `A new chapter in sustainable tourism has begun with the grand opening of the Ibeno Eco-Resort, a world class facility designed to offer luxury accommodation while maintaining environmental responsibility.
 
 The resort, strategically located along the pristine Ibeno Beach, features 50 eco-friendly chalets built with sustainable materials and powered by solar energy. The development represents a N5 billion investment and is expected to create over 200 direct jobs for indigenes.
 
@@ -60,7 +85,8 @@ The Governor commended the investors for their commitment to sustainable develop
   {
     id: "cultural-festival-success",
     title: "Ibom Cultural Festival Attracts 50,000 Visitors",
-    description: "The annual celebration of Akwa Ibom heritage drew record attendance from across Africa.",
+    description:
+      "The annual celebration of Akwa Ibom heritage drew record attendance from across Africa.",
     image: culturalMenImg,
     fullContent: `The 2024 edition of the Ibom Cultural Festival has been declared the most successful in its history, attracting over 50,000 visitors from Nigeria and across Africa over its seven-day duration.
 
@@ -87,7 +113,8 @@ The Commissioner for Culture and Tourism announced that planning has already beg
   {
     id: "tourism-training-program",
     title: "500 Youth Graduate from Tourism Training Program",
-    description: "Young professionals equipped with skills to drive the state's hospitality industry forward.",
+    description:
+      "Young professionals equipped with skills to drive the state's hospitality industry forward.",
     image: nature,
     fullContent: `The Akwa Ibom Hotels and Tourism Development Commission has successfully graduated 500 young professionals from its comprehensive Tourism and Hospitality Training Program, a initiative designed to build local capacity in the tourism sector.
 

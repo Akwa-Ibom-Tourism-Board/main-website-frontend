@@ -53,7 +53,7 @@ const currentEvents: CurrentEvent[] = [
     id: "mbopo-akwa-ibom",
     title: "Mbopo Akwa Ibom Pageant",
     description:
-      "Celebrate culture and heritage — register to represent Akwa Ibom at the Mbopo Akwa Ibom pageant.",
+      "Celebrate culture and heritage, register to represent Akwa Ibom at the Mbopo Akwa Ibom pageant.",
     image: mbobpoImg,
     ctaLabel: "Register for Mbopo",
     ctaLink: MBOPO_AKWA_IBOM_URL,

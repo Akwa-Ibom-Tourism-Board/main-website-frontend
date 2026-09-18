@@ -21,7 +21,7 @@ const destinations = [
   {
     name: "Ibom Icon Hotel & Golf Resort",
     description:
-      "A world-class 5-star hotel and golf resort offering luxury accommodation and championship golf course.",
+      "A world class 5-star hotel and golf resort offering luxury accommodation and championship golf course.",
     features: ["Golf Course", "Spa", "Fine Dining", "Conference Facilities"],
   },
   {
