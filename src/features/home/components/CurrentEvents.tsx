@@ -90,7 +90,7 @@ const CurrentEvents = () => {
           <Eyebrow>Get Involved</Eyebrow>
           <Title>Current Events</Title>
           <Lede>
-            From cultural celebrations to community initiatives — here&apos;s
+            From cultural celebrations to community initiatives, here&apos;s
             what&apos;s happening across Akwa Ibom State right now.
           </Lede>
         </Heading>

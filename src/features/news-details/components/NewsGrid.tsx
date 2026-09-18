@@ -2,7 +2,14 @@ import { useNavigate } from "react-router-dom";
 import { Container } from "@/shared/components";
 import { newsData } from "../api/newsData";
 import NewsCard from "./NewsCard";
-import { Section, Heading, Eyebrow, Title, Lede, Grid } from "./NewsGrid.styles";
+import {
+  Section,
+  Heading,
+  Eyebrow,
+  Title,
+  Lede,
+  Grid,
+} from "./NewsGrid.styles";
 
 const NewsGrid = () => {
   const navigate = useNavigate();
@@ -14,7 +21,8 @@ const NewsGrid = () => {
           <Eyebrow>What&apos;s Happening</Eyebrow>
           <Title>Latest News</Title>
           <Lede>
-            Discover the latest developments, success stories, and milestones in Akwa Ibom tourism
+            Discover the latest developments, success stories, and milestones in
+            Akwa Ibom tourism
           </Lede>
         </Heading>
 

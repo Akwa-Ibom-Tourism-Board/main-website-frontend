@@ -28,7 +28,7 @@ Arise Park features:
 Officials described the park as a direct investment in the state's quality of life and tourism appeal, giving residents and visitors alike a safe, modern space for recreation. The Hotels and Tourism Development Commission noted that Arise Park will be integrated into the state's broader tourism promotion efforts, positioning it alongside the state's beaches and cultural sites as a must-visit destination.
 
 The Commission has announced plans to host regular community events at the park in the coming months, further cementing its role as a hub for family entertainment in Akwa Ibom State.`,
-    date: "December 5, 2024",
+    date: "September, 2026",
     category: "Recreation",
   },
   {
@@ -51,37 +51,37 @@ Key factors that contributed to this achievement include:
 - Investment in tourism infrastructure and capacity building
 
 The Hotels and Tourism Development Commission has announced plans to leverage this recognition to attract more international visitors and investments to the state.`,
-    date: "November 12, 2024",
+    date: "November 12, 2025",
     category: "Achievement",
   },
-  {
-    id: "new-resort-opening",
-    title: "New Eco-Resort Opens at Ibeno Beach",
-    description:
-      "A state of the art eco-friendly resort brings sustainable luxury to Akwa Ibom's coastline.",
-    image: hotel,
-    fullContent: `A new chapter in sustainable tourism has begun with the grand opening of the Ibeno Eco-Resort, a world class facility designed to offer luxury accommodation while maintaining environmental responsibility.
+//   {
+//     id: "new-resort-opening",
+//     title: "New Eco-Resort Opens at Ibeno Beach",
+//     description:
+//       "A state of the art eco-friendly resort brings sustainable luxury to Akwa Ibom's coastline.",
+//     image: hotel,
+//     fullContent: `A new chapter in sustainable tourism has begun with the grand opening of the Ibeno Eco-Resort, a world class facility designed to offer luxury accommodation while maintaining environmental responsibility.
 
-The resort, strategically located along the pristine Ibeno Beach, features 50 eco-friendly chalets built with sustainable materials and powered by solar energy. The development represents a N5 billion investment and is expected to create over 200 direct jobs for indigenes.
+// The resort, strategically located along the pristine Ibeno Beach, features 50 eco-friendly chalets built with sustainable materials and powered by solar energy. The development represents a N5 billion investment and is expected to create over 200 direct jobs for indigenes.
 
-Facilities include:
-- 50 luxury eco-chalets with ocean views
-- Organic restaurant featuring local cuisine
-- Water sports center
-- Spa and wellness center using natural products
-- Conference facilities for business tourism
-- Marine conservation education center
+// Facilities include:
+// - 50 luxury eco-chalets with ocean views
+// - Organic restaurant featuring local cuisine
+// - Water sports center
+// - Spa and wellness center using natural products
+// - Conference facilities for business tourism
+// - Marine conservation education center
 
-The resort operates on principles of sustainable tourism, including:
-- Zero single-use plastics policy
-- Rainwater harvesting systems
-- Local community engagement programs
-- Marine life protection initiatives
+// The resort operates on principles of sustainable tourism, including:
+// - Zero single-use plastics policy
+// - Rainwater harvesting systems
+// - Local community engagement programs
+// - Marine life protection initiatives
 
-The Governor commended the investors for their commitment to sustainable development and assured continued government support for such initiatives that align with the state's vision for responsible tourism growth.`,
-    date: "November 8, 2024",
-    category: "Development",
-  },
+// The Governor commended the investors for their commitment to sustainable development and assured continued government support for such initiatives that align with the state's vision for responsible tourism growth.`,
+//     date: "November 8, 2024",
+//     category: "Development",
+//   },
   {
     id: "cultural-festival-success",
     title: "Ibom Cultural Festival Attracts 50,000 Visitors",
