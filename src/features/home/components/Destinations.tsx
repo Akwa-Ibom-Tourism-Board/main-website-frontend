@@ -4,7 +4,7 @@ import natureImg from "@/assets/nature.jpg";
 import cultureImg from "@/assets/culture.jpg";
 import ibenoImg from "@/assets/ibeno-beach.webp";
 import ibomStadiumImg from "@/assets/ibom-stadium.webp";
-import amalgamationHouse from "@/assets/amalgamate.jpeg"
+import amalgamationHouse from "@/assets/amalgamate.jpeg";
 import arisePark2 from "@/assets/hero/arise-park-2.jpg";
 import {
   Section,
@@ -26,19 +26,22 @@ const destinations = [
   {
     icon: Waves,
     title: "Ibeno Beach",
-    description: "West Africa's longest stretch of white sand beach with crystal clear waters",
+    description:
+      "West Africa's longest stretch of white sand beach with crystal clear waters",
     image: ibenoImg,
   },
   {
     icon: Mountain,
     title: "Ikot Abasi Waterfalls",
-    description: "Breathtaking natural waterfalls surrounded by lush tropical rainforest",
+    description:
+      "Breathtaking natural waterfalls surrounded by lush tropical rainforest",
     image: natureImg,
   },
   {
     icon: Camera,
     title: "Cultural Heritage Sites",
-    description: "Explore ancient traditions, art, and the vibrant culture of the Ibibio people",
+    description:
+      "Explore ancient traditions, art, and the vibrant culture of the Ibibio people",
     image: amalgamationHouse,
   },
   {
@@ -49,8 +52,9 @@ const destinations = [
   },
   {
     icon: FerrisWheel,
-    title: "Arise Resorts & Theme Park",
-    description: "Ferris wheels, carousel rides, and green open spaces for the whole family to enjoy",
+    title: "Arise Palm Resorts",
+    description:
+      "Ferris wheels, carousel rides, and green open spaces for the whole family to enjoy",
     image: arisePark2,
   },
 ];
@@ -61,7 +65,10 @@ const Destinations = () => {
       <Container>
         <Heading>
           <Title>Featured Destinations</Title>
-          <Lede>From pristine beaches to cultural landmarks, discover the wonders that await you</Lede>
+          <Lede>
+            From pristine beaches to cultural landmarks, discover the wonders
+            that await you
+          </Lede>
         </Heading>
 
         <Grid>

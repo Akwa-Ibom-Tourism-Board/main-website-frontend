@@ -11,11 +11,11 @@ export const newsData: NewsItem[] = [
   {
     id: "arise-park-commissioning",
     title:
-      "Arise Resorts & Theme Park Officially Commissioned as Akwa Ibom's Newest Family Attraction",
+      "Arise Palm Resorts Officially Commissioned as Akwa Ibom's Newest Family Attraction",
     description:
       "The state's newest recreational park opened its doors with rides, green spaces, and entertainment for the whole family.",
     image: arisePark1,
-    fullContent: `Akwa Ibom State marked a new milestone in recreational tourism with the official commissioning of Arise Resorts & Theme Park, a state of the art family entertainment destination developed under the state's A.R.I.S.E. agenda.
+    fullContent: `Akwa Ibom State marked a new milestone in recreational tourism with the official commissioning of Arise Palm Resorts, a state of the art family entertainment destination developed under the state's A.R.I.S.E. agenda.
 
 The commissioning ceremony drew government officials, community leaders, and residents for an evening of celebration, with the park's grounds lit up to showcase its facilities to the public for the first time.
 
@@ -54,34 +54,34 @@ The Hotels and Tourism Development Commission has announced plans to leverage th
     date: "November 12, 2025",
     category: "Achievement",
   },
-//   {
-//     id: "new-resort-opening",
-//     title: "New Eco-Resort Opens at Ibeno Beach",
-//     description:
-//       "A state of the art eco-friendly resort brings sustainable luxury to Akwa Ibom's coastline.",
-//     image: hotel,
-//     fullContent: `A new chapter in sustainable tourism has begun with the grand opening of the Ibeno Eco-Resort, a world class facility designed to offer luxury accommodation while maintaining environmental responsibility.
+  //   {
+  //     id: "new-resort-opening",
+  //     title: "New Eco-Resort Opens at Ibeno Beach",
+  //     description:
+  //       "A state of the art eco-friendly resort brings sustainable luxury to Akwa Ibom's coastline.",
+  //     image: hotel,
+  //     fullContent: `A new chapter in sustainable tourism has begun with the grand opening of the Ibeno Eco-Resort, a world class facility designed to offer luxury accommodation while maintaining environmental responsibility.
 
-// The resort, strategically located along the pristine Ibeno Beach, features 50 eco-friendly chalets built with sustainable materials and powered by solar energy. The development represents a N5 billion investment and is expected to create over 200 direct jobs for indigenes.
+  // The resort, strategically located along the pristine Ibeno Beach, features 50 eco-friendly chalets built with sustainable materials and powered by solar energy. The development represents a N5 billion investment and is expected to create over 200 direct jobs for indigenes.
 
-// Facilities include:
-// - 50 luxury eco-chalets with ocean views
-// - Organic restaurant featuring local cuisine
-// - Water sports center
-// - Spa and wellness center using natural products
-// - Conference facilities for business tourism
-// - Marine conservation education center
+  // Facilities include:
+  // - 50 luxury eco-chalets with ocean views
+  // - Organic restaurant featuring local cuisine
+  // - Water sports center
+  // - Spa and wellness center using natural products
+  // - Conference facilities for business tourism
+  // - Marine conservation education center
 
-// The resort operates on principles of sustainable tourism, including:
-// - Zero single-use plastics policy
-// - Rainwater harvesting systems
-// - Local community engagement programs
-// - Marine life protection initiatives
+  // The resort operates on principles of sustainable tourism, including:
+  // - Zero single-use plastics policy
+  // - Rainwater harvesting systems
+  // - Local community engagement programs
+  // - Marine life protection initiatives
 
-// The Governor commended the investors for their commitment to sustainable development and assured continued government support for such initiatives that align with the state's vision for responsible tourism growth.`,
-//     date: "November 8, 2024",
-//     category: "Development",
-//   },
+  // The Governor commended the investors for their commitment to sustainable development and assured continued government support for such initiatives that align with the state's vision for responsible tourism growth.`,
+  //     date: "November 8, 2024",
+  //     category: "Development",
+  //   },
   {
     id: "cultural-festival-success",
     title: "Ibom Cultural Festival Attracts 50,000 Visitors",

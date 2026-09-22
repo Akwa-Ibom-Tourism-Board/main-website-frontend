@@ -66,7 +66,7 @@ const heroSlides: HeroSlide[] = [
     image: governorImg,
     title: "Governor Umo Eno: A Champion for Tourism",
     subtitle:
-      "“We are committed to making tourism a key driver of Akwa Ibom's economy — welcoming the world to our land of promise.” — Gov. Umo Eno",
+      "“We are committed to making tourism a key driver of Akwa Ibom's economy, welcoming the world to our land of promise.” — Gov. Umo Eno",
     isCtaRequired: false,
   },
   {
@@ -89,17 +89,17 @@ const heroSlides: HeroSlide[] = [
   },
   {
     image: arisePark2,
-    title: "Arise Resorts & Theme Park: Where Family Fun Comes Alive",
+    title: "Arise Palm Resorts: Where Family Fun Comes Alive",
     subtitle:
-      "From Ferris wheels to carousel rides, Arise Resorts & Theme Park offers unforgettable family entertainment in the heart of Akwa Ibom.",
+      "From Ferris wheels to carousel rides, Arise Palm Resorts offers unforgettable family entertainment in the heart of Akwa Ibom.",
     isCtaRequired: false,
     objectFit: "cover",
   },
   {
     image: arisePark1,
-    title: "A Landmark Night for Arise Resorts & Theme Park",
+    title: "A Landmark Night for Arise Palm Resorts",
     subtitle:
-      "Celebrating the grand commissioning of Arise Resorts & Theme Park's world class recreational facilities.",
+      "Celebrating the grand commissioning of Arise Palm Resorts's world class recreational facilities.",
     isCtaRequired: false,
     objectFit: "cover",
   },
