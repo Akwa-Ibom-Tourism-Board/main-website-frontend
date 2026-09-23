@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/mbopo", "destination": "https://mbopo-akwa-ibom-design.vercel.app/" },
+    { "source": "/mbopo/:path*", "destination": "https://mbopo-akwa-ibom-design.vercel.app/:path*" }
+  ]
+}

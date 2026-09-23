@@ -7,7 +7,7 @@ import { useTheme } from "@/theme";
 import ibomAirImg from "@/assets/ibom-air.png";
 import mbopoFlier from "@/assets/mbopo-flier.png";
 import fourpoint from "@/assets/four-points.png";
-import logo from "@/assets/logo-main.png";
+import logo from "@/assets/akwa-ibom-logo-main.png";
 import governorImg from "@/assets/governor-image-2.webp";
 import registrationImg from "@/assets/hotel-registration-flier.jpeg";
 import arisePark1 from "@/assets/hero/arise-park-1.jpeg";
@@ -121,7 +121,7 @@ const heroSlides: HeroSlide[] = [
       "Applications are open for young women across all 31 local government areas to become Akwa Ibom's next State Tourism Ambassador.",
     ctaLabel: "Apply Now",
     glow: true,
-    ctaLink: "https://mbopo-akwa-ibom-design.vercel.app/",
+    ctaLink: "/mbopo",
     isCtaRequired: true,
     isRedirect: true,
   },

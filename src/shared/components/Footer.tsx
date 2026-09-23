@@ -8,7 +8,7 @@ import {
   Twitter,
   ArrowUp,
 } from "lucide-react";
-import logo from "@/assets/logo-main.png";
+import logo from "@/assets/akwa-ibom-logo-main.png";
 import { Container } from "./Container";
 import {
   FooterEl,

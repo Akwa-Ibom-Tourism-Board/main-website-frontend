@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import NavDropdown, { type NavItemWithDropdown } from "./NavDropdown";
-import logo from "@/assets/logo-main.png";
+import logo from "@/assets/akwa-ibom-logo-main.png";
 import {
   Nav,
   Inner,
@@ -25,7 +25,7 @@ import {
 } from "./Navbar.styles";
 
 const REGISTER_ESTABLISHMENT_URL = "https://register.akhtdc.com.ng";
-const MBOPO_AKWA_IBOM_URL = "https://mbopo-akwa-ibom-design.vercel.app/";
+const MBOPO_AKWA_IBOM_URL = "/mbopo";
 
 const navItems: NavItemWithDropdown[] = [
   {
