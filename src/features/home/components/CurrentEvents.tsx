@@ -35,7 +35,7 @@ interface CurrentEvent {
 }
 
 const REGISTER_ESTABLISHMENT_URL = "https://register.akhtdc.com.ng";
-const MBOPO_AKWA_IBOM_URL = "/mbopo";
+const MBOPO_AKWA_IBOM_URL = "https://mbopo-akwa-ibom-design.vercel.app/";
 
 // TODO: swap this placeholder list for real, live events.
 const currentEvents: CurrentEvent[] = [

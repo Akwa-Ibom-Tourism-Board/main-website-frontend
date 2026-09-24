@@ -121,7 +121,7 @@ const heroSlides: HeroSlide[] = [
       "Applications are open for young women across all 31 local government areas to become Akwa Ibom's next State Tourism Ambassador.",
     ctaLabel: "Apply Now",
     glow: true,
-    ctaLink: "/mbopo",
+    ctaLink: "https://mbopo-akwa-ibom-design.vercel.app/",
     isCtaRequired: true,
     isRedirect: true,
   },
