@@ -23,24 +23,27 @@ import {
 const pastEvents = [
   {
     title: "Tourism Investment Summit 2024",
-    date: "March 15-17, 2024",
+    date: "March 15 to 17, 2024",
     location: "Ibom Icon Hotel",
     attendees: "500+",
-    description: "Annual summit bringing together investors, stakeholders, and tourism professionals.",
+    description:
+      "Annual summit bringing together investors, stakeholders, and tourism professionals.",
   },
   {
     title: "Hospitality Training Workshop",
     date: "February 8, 2024",
     location: "Le Meridien Hotel, Uyo",
     attendees: "200+",
-    description: "Capacity building workshop for hotel and hospitality industry workers.",
+    description:
+      "Capacity building workshop for hotel and hospitality industry workers.",
   },
   {
     title: "Beach Tourism Conference",
     date: "January 20, 2024",
     location: "Ibeno Beach Resort",
     attendees: "300+",
-    description: "Conference focused on developing and promoting beach tourism in the state.",
+    description:
+      "Conference focused on developing and promoting beach tourism in the state.",
   },
 ];
 
@@ -49,13 +52,15 @@ const upcomingEvents = [
     title: "Annual Tourism Awards",
     date: "December 2024",
     location: "To be announced",
-    description: "Celebrating excellence in the tourism and hospitality sector.",
+    description:
+      "Celebrating excellence in the tourism and hospitality sector.",
   },
   {
     title: "Heritage Sites Forum",
     date: "Q1 2025",
     location: "National Museum, Uyo",
-    description: "Forum on preserving and promoting Akwa Ibom's heritage sites.",
+    description:
+      "Forum on preserving and promoting Akwa Ibom's heritage sites.",
   },
 ];
 

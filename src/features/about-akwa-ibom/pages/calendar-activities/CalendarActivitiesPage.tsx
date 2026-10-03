@@ -22,37 +22,69 @@ import {
 const events = [
   {
     month: "January",
-    events: [{ name: "New Year Beach Festival", date: "Jan 1-3", location: "Ibeno Beach" }],
+    events: [
+      {
+        name: "New Year Beach Festival",
+        date: "Jan 1 to 3",
+        location: "Ibeno Beach",
+      },
+    ],
   },
   {
     month: "February",
-    events: [{ name: "Valentine Beach Party", date: "Feb 14", location: "Ibeno Beach" }],
+    events: [
+      {
+        name: "Valentine Beach Party",
+        date: "Feb 14",
+        location: "Ibeno Beach",
+      },
+    ],
   },
   {
     month: "March",
-    events: [{ name: "Women's Day Celebration", date: "Mar 8", location: "Uyo" }],
+    events: [
+      { name: "Women's Day Celebration", date: "Mar 8", location: "Uyo" },
+    ],
   },
   {
     month: "April",
-    events: [{ name: "Easter Beach Carnival", date: "Varies", location: "Ibeno Beach" }],
+    events: [
+      {
+        name: "Easter Beach Carnival",
+        date: "Varies",
+        location: "Ibeno Beach",
+      },
+    ],
   },
   {
     month: "August",
-    events: [{ name: "Calabar-Itu Festival", date: "Aug 15-20", location: "Itu" }],
+    events: [
+      { name: "Calabar-Itu Festival", date: "Aug 15 to 20", location: "Itu" },
+    ],
   },
   {
     month: "September",
-    events: [{ name: "State Anniversary Celebration", date: "Sep 23", location: "Uyo" }],
+    events: [
+      {
+        name: "State Anniversary Celebration",
+        date: "Sep 23",
+        location: "Uyo",
+      },
+    ],
   },
   {
     month: "October",
-    events: [{ name: "Tourism Week", date: "Oct 1-7", location: "Statewide" }],
+    events: [{ name: "Tourism Week", date: "Oct 1 to 7", location: "Statewide" }],
   },
   {
     month: "December",
     events: [
-      { name: "Christmas Carnival", date: "Dec 20-31", location: "Uyo" },
-      { name: "New Year's Eve Beach Party", date: "Dec 31", location: "Ibeno Beach" },
+      { name: "Christmas Carnival", date: "Dec 20 to 31", location: "Uyo" },
+      {
+        name: "New Year's Eve Beach Party",
+        date: "Dec 31",
+        location: "Ibeno Beach",
+      },
     ],
   },
 ];
@@ -75,8 +107,8 @@ const CalendarActivitiesPage = () => {
           <IntroBlock>
             <IntroTitle>Annual Events & Festivals</IntroTitle>
             <IntroText>
-              Akwa Ibom State hosts numerous events throughout the year. Plan your visit to coincide with these
-              exciting celebrations.
+              Akwa Ibom State hosts numerous events throughout the year. Plan
+              your visit to coincide with these exciting celebrations.
             </IntroText>
           </IntroBlock>
 

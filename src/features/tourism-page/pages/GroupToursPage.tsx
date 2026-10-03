@@ -28,21 +28,23 @@ const tours = [
   {
     title: "Ibeno Beach Experience",
     duration: "Full Day",
-    groupSize: "10-25 people",
+    groupSize: "10 to 25 people",
     description:
       "Experience the longest coastline in West Africa with swimming, beach games, and local cuisine.",
   },
   {
     title: "Cultural Heritage Tour",
     duration: "2 Days",
-    groupSize: "5-15 people",
-    description: "Visit historical sites, museums, and experience traditional Ibibio culture firsthand.",
+    groupSize: "5 to 15 people",
+    description:
+      "Visit historical sites, museums, and experience traditional Ibibio culture firsthand.",
   },
   {
-    title: "Eco-Tourism Adventure",
+    title: "Eco Tourism Adventure",
     duration: "3 Days",
-    groupSize: "8-20 people",
-    description: "Explore rainforests, waterfalls, and wildlife reserves in Akwa Ibom State.",
+    groupSize: "8 to 20 people",
+    description:
+      "Explore rainforests, waterfalls, and wildlife reserves in Akwa Ibom State.",
   },
 ];
 
@@ -64,8 +66,8 @@ const GroupToursPage = () => {
           <Header>
             <HeaderTitle>Popular Group Tour Packages</HeaderTitle>
             <HeaderText>
-              Join fellow travelers and discover the beauty of Akwa Ibom State through
-              our carefully curated group tour experiences.
+              Join fellow travelers and discover the beauty of Akwa Ibom State
+              through our carefully curated group tour experiences.
             </HeaderText>
           </Header>
 
@@ -97,21 +99,28 @@ const GroupToursPage = () => {
                   <Users color={theme.colors.primary.DEFAULT} size={24} />
                 </WhyIconCircle>
                 <WhyItemTitle>Social Experience</WhyItemTitle>
-                <WhyItemText>Meet like-minded travelers and create lasting memories together.</WhyItemText>
+                <WhyItemText>
+                  Meet like minded travelers and create lasting memories
+                  together.
+                </WhyItemText>
               </WhyItem>
               <WhyItem>
                 <WhyIconCircle $variant="secondary">
                   <MapPin color={theme.colors.secondary.DEFAULT} size={24} />
                 </WhyIconCircle>
                 <WhyItemTitle>Expert Guides</WhyItemTitle>
-                <WhyItemText>Professional local guides who know every hidden gem.</WhyItemText>
+                <WhyItemText>
+                  Professional local guides who know every hidden gem.
+                </WhyItemText>
               </WhyItem>
               <WhyItem>
                 <WhyIconCircle $variant="primary">
                   <Calendar color={theme.colors.primary.DEFAULT} size={24} />
                 </WhyIconCircle>
                 <WhyItemTitle>Cost Effective</WhyItemTitle>
-                <WhyItemText>Share costs and enjoy premium experiences at better rates.</WhyItemText>
+                <WhyItemText>
+                  Share costs and enjoy premium experiences at better rates.
+                </WhyItemText>
               </WhyItem>
             </WhyGrid>
           </WhySection>

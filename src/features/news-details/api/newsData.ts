@@ -35,7 +35,7 @@ The Commission has announced plans to host regular community events at the park 
     id: "tourism-awards-2024",
     title: "Akwa Ibom Wins Best Tourism Destination Award",
     description:
-      "The state has been recognized as the most tourist-friendly destination in Nigeria for the third consecutive year.",
+      "The state has been recognized as the most tourist friendly destination in Nigeria for the third consecutive year.",
     image: heroBeach,
     fullContent: `Akwa Ibom State has once again emerged as the winner of the prestigious Nigerian Tourism Award for the Best Tourism Destination in Nigeria. This marks the third consecutive year the state has claimed this honor, cementing its position as the country's premier tourism hub.
 
@@ -44,10 +44,10 @@ The award ceremony, held at the Transcorp Hilton in Abuja, saw tourism stakehold
 Governor Umo Eno, represented by the Commissioner for Culture and Tourism, expressed gratitude for the recognition, stating that the government remains committed to making Akwa Ibom the preferred destination for both domestic and international tourists.
 
 Key factors that contributed to this achievement include:
-- World class hospitality facilities including the 5-star Le Meridien Ibom Hotel & Golf Resort
+- World class hospitality facilities including the 5 star Le Meridien Ibom Hotel & Golf Resort
 - Beautiful beaches at Ibeno, one of the longest sand beaches in West Africa
 - Rich cultural heritage and festivals
-- Improved security and tourist-friendly policies
+- Improved security and tourist friendly policies
 - Investment in tourism infrastructure and capacity building
 
 The Hotels and Tourism Development Commission has announced plans to leverage this recognition to attract more international visitors and investments to the state.`,

@@ -1,6 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { Calendar, ExternalLink } from "lucide-react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, Button } from "@/shared/ui";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  Button,
+} from "@/shared/ui";
 import { Container } from "@/shared/components";
 import {
   Section,
@@ -31,9 +37,10 @@ const announcements: Announcement[] = [
   {
     id: 1,
     title: "2025 Tourism Festival Announced",
-    preview: "Join us for the biggest tourism celebration in the South-South region...",
+    preview:
+      "Join us for the biggest tourism celebration in the South-South region...",
     fullText:
-      "The Akwa Ibom State Hotels and Tourism Development Commission is excited to announce the 2025 Tourism Festival, scheduled to take place from December 15-22. This year's festival promises to be the biggest celebration of culture, hospitality, and tourism in the South-South region. Activities include cultural performances, food festivals, beach carnivals, and hotel exhibitions. All registered hotels and tour operators are invited to participate.",
+      "The Akwa Ibom State Hotels and Tourism Development Commission is excited to announce the 2025 Tourism Festival, scheduled to take place from December 15 to 22. This year's festival promises to be the biggest celebration of culture, hospitality, and tourism in the South-South region. Activities include cultural performances, food festivals, beach carnivals, and hotel exhibitions. All registered hotels and tour operators are invited to participate.",
     date: "November 15, 2025",
     link: "https://akwaibomtourism.com/festival",
   },
@@ -58,7 +65,7 @@ const announcements: Announcement[] = [
     title: "Tourism Training Workshop",
     preview: "Capacity building program for hospitality professionals...",
     fullText:
-      "A three-day intensive workshop for hospitality professionals will be held at Le Meridien Ibom Hotel. Topics include customer service excellence, digital marketing for tourism, sustainable tourism practices, and crisis management. Certificates will be awarded to all participants. Registration is free for licensed operators.",
+      "A three day intensive workshop for hospitality professionals will be held at Le Meridien Ibom Hotel. Topics include customer service excellence, digital marketing for tourism, sustainable tourism practices, and crisis management. Certificates will be awarded to all participants. Registration is free for licensed operators.",
     date: "October 28, 2025",
     link: "https://akwaibomtourism.com/workshop",
   },
@@ -73,7 +80,8 @@ const announcements: Announcement[] = [
 ];
 
 const Announcements = () => {
-  const [selectedAnnouncement, setSelectedAnnouncement] = useState<Announcement | null>(null);
+  const [selectedAnnouncement, setSelectedAnnouncement] =
+    useState<Announcement | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -99,12 +107,16 @@ const Announcements = () => {
         <Heading>
           <Title>Events & Conferences</Title>
           <Lede>
-            Stay updated with the latest events and conferences from the Akwa Ibom Hotels and Tourism Development
-            Commission
+            Stay updated with the latest events and conferences from the Akwa
+            Ibom Hotels and Tourism Development Commission
           </Lede>
         </Heading>
 
-        <ScrollTrack ref={scrollRef} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+        <ScrollTrack
+          ref={scrollRef}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           <ScrollRow>
             {[...announcements, ...announcements].map((announcement, index) => (
               <AnnouncementCard
@@ -123,7 +135,10 @@ const Announcements = () => {
         </ScrollTrack>
       </Container>
 
-      <Dialog open={!!selectedAnnouncement} onOpenChange={() => setSelectedAnnouncement(null)}>
+      <Dialog
+        open={!!selectedAnnouncement}
+        onOpenChange={() => setSelectedAnnouncement(null)}
+      >
         <DialogContent>
           <DialogHeader>
             <DialogTitle>{selectedAnnouncement?.title}</DialogTitle>
@@ -136,7 +151,11 @@ const Announcements = () => {
             <DialogText>{selectedAnnouncement?.fullText}</DialogText>
             {selectedAnnouncement?.link && (
               <Button asChild variant="outline">
-                <a href={selectedAnnouncement.link} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={selectedAnnouncement.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <ExternalLink size={16} />
                   Learn More
                 </a>
